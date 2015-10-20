@@ -11,10 +11,10 @@
     [b]/downloads[/b] : set this path to where you wish pyLoad to store the downloaded files.[br][br]
     [b]Tip:[/b] The default username is admin and the default password is admin.
   </Description>
-  <Registry>https://registry.hub.docker.com/u/rix1337/pyload/</Registry>
+  <Registry>https://registry.hub.docker.com/u/gfjardim/pyload/</Registry>
   <GitHub>https://github.com/rix1337/docker-containers</GitHub>
   <Support>http://lime-technology.com/forum/index.php?topic=39227.0</Support>
-  <Repository>rix1337/pyload</Repository>
+  <Repository>gfjardim/pyload</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
@@ -45,7 +45,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/Downloads/</HostDir>
       <ContainerDir>/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -55,7 +55,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <WebUI>https://[IP]:[PORT:8000]/pyload</WebUI>
   <Banner>http://i.imgur.com/2dDGScZ.png</Banner>
   <Icon>http://i.imgur.com/krv3B5v.png</Icon>
 </Container>
