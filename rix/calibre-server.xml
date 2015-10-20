@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>Calibre</Name>
+  <Description>
+    Calibre is an e-book managament software[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where the calibre configuration and library files will reside[br][br]
+    Don't forget to enter in the host port and app folder.
+  </Description>
+  <Overview>
+    Calibre is an e-book management software. This docker app allows you to serve your e-books to remote clients through the web browser. Note: this is the server version, not the full GUI.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=39413.0</Support>
+  <Registry>https://registry.hub.docker.com/u/aptalca/docker-calibre/</Registry>
+  <GitHub>https://github.com/rix1337/docker-calibre</GitHub>
+  <Repository>aptalca/docker-calibre</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9000</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol></Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Calibre</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Banner></Banner>
+  <Icon>http://calibre-ebook.com/favicon.ico</Icon>
+  <Beta>False</Beta>
+  <Category>MediaServer:Books</Category>
+</Containers>
