@@ -9,7 +9,8 @@
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/config[/b] : set this path to where you wish pyLoad to store it's configuration.[br]
     [b]/downloads[/b] : set this path to where you wish pyLoad to store the downloaded files.[br][br]
-    [b]Tip:[/b] The default username is admin and the default password is admin.
+    Forked by rix1337
+	[b]Tip:[/b] The default username is admin and the default password is admin.
   </Description>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-pyload/</Registry>
   <GitHub>https://github.com/rix1337/docker-pyload</GitHub>
@@ -44,11 +45,6 @@
     </Publish>
   </Networking>
   <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/pyLoad/bin</HostDir>
-      <ContainerDir>/opt/pyload</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
     <Volume>
       <HostDir>/mnt/user/Downloads/</HostDir>
       <ContainerDir>/downloads</ContainerDir>
