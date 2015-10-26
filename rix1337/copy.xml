@@ -4,12 +4,13 @@
 <Category>Downloaders:</Category>
   <Date>2015-10-25</Date>
   <Changes>
-    Copy.com Container for unRAID
+    -Initial Release
 </Changes>
-  <Name>sabnzbd</Name>
+  <Name>Copy</Name>
   <Support>http://lime-technology.com/forum/index.php</Support>
   <Description>
    Tired of Dropbox? Use this!
+   Switch to Advanced View and set your login info (COPYNAME/COPYPW)
   </Description>
   <Overview>Copy.com</Overview>
 <Project>http://sabnzbd.org/</Project>
@@ -21,11 +22,11 @@
   <Environment>
     <Variable>
       <Name>COPYNAME</Name>
-      <Value></Value>
+      <Value>Your Email Address</Value>
     </Variable>
     <Variable>
       <Name>COPYPW</Name>
-      <Value>100</Value>
+      <Value>Your Password</Value>
     </Variable>
   </Environment>
   <Networking>
