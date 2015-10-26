@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <Name>Verarbeitung</Name>
+  <Name>Processing</Name>
   <Description>
   Post Processing Script by rix1337
   </Description>
   <Overview>
-	Post Process Media Files with WebRDP
+	Processing Media Files with WebRDP
   </Overview>
   <Support>http://lime-technology.com/forum/index.php</Support>
-  <Registry>https://registry.hub.docker.com/u/rix1337/docker-pp_rix</Registry>
-  <GitHub>https://github.com/rix1337/docker-pp_rix</GitHub>
-  <Repository>rix1337/docker-pp_rix</Repository>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-processing</Registry>
+  <GitHub>https://github.com/rix1337/docker-processing</GitHub>
+  <Repository>rix1337/docker-processing</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
@@ -39,7 +39,7 @@
   </Environment>    
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/pp_rix</HostDir>
+      <HostDir>/mnt/cache/appdata/processing</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
