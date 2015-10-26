@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+<Category>Downloaders:</Category>
+  <Date>2015-10-25</Date>
+  <Changes>
+    Copy.com Container for unRAID
+</Changes>
+  <Name>sabnzbd</Name>
+  <Support>http://lime-technology.com/forum/index.php</Support>
+  <Description>
+   Tired of Dropbox? Use this!
+  </Description>
+  <Overview>Copy.com</Overview>
+<Project>http://sabnzbd.org/</Project>
+  <Registry>https://hub.docker.com/r/rix1337/docker-copy/</Registry>
+  <GitHub>https://github.com/rix1337/docker-copy</GitHub>
+  <Repository>rix1337/docker-copy</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>COPYNAME</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>COPYPW</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+</Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Copy</HostDir>
+      <ContainerDir>/syncdir</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner>http://www.itcentralpoint.com/wp-content/uploads/2013/05/Copy_Horizontal_Banner.png</Banner>
+  <Icon>http://winsource.com/wp-content/uploads/2013/08/copy-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
