@@ -6,7 +6,7 @@
   </Description>
   <Overview>
 	Includes a Bash Script that automatically renames Media and adds Tags with the help of filebot/mkvtoolnix
-	Runs when Started, close it manually
+	Runs when Started, close it manually afterwards
   </Overview>
   <Support>http://lime-technology.com/forum/index.php</Support>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-processing</Registry>
@@ -24,7 +24,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/processing</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/log</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
