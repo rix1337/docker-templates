@@ -5,12 +5,12 @@
   Post Processing Script by rix1337
   </Description>
   <Overview>
-    Calibre is an e-book management software. RDP-Calibre is a combo docker for calibre web server and gui (through webRDP). With this docker, you get the best of both worlds, and they both use the same database.
+	Post Process Media Files with WebRDP
   </Overview>
   <Support>http://lime-technology.com/forum/index.php</Support>
-  <Registry>https://registry.hub.docker.com/u/rix1337/docker-verarbeitung</Registry>
-  <GitHub>https://github.com/rix1337/docker-verarbeitung</GitHub>
-  <Repository>rix1337/docker-verarbeitung</Repository>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-pp_rix</Registry>
+  <GitHub>https://github.com/rix1337/docker-pp_rix</GitHub>
+  <Repository>rix1337/docker-pp_rix</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
@@ -39,7 +39,7 @@
   </Environment>    
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/verarbeitung</HostDir>
+      <HostDir>/mnt/cache/appdata/pp_rix</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
