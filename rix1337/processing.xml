@@ -2,10 +2,10 @@
 <Containers>
   <Name>Processing</Name>
   <Description>
-  Post Processing Script by rix1337
+  Post Process Downloaded Media Files
   </Description>
   <Overview>
-	Processing Media Files with WebRDP
+	Includes a Bash Script that automatically renames Media and adds Tags with the help of filebot/mkvtoolnix
   </Overview>
   <Support>http://lime-technology.com/forum/index.php</Support>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-processing</Registry>
