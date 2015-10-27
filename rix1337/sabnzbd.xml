@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Beta>False</Beta>
-<Category>Downloaders:</Category>
+  <Category>Downloaders: Usenet</Category>
   <Date>2015-10-24</Date>
   <Changes>
-    [center][img width='300px' src='https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_small.png'][/center]
- 
-[center][font size=4]Sabnzbd Change Log[/font][/center]
+    [center]-Added mkvtoolnix (for post-processing use)[/center]
 </Changes>
   <Name>sabnzbd</Name>
   <Support>http://lime-technology.com/forum/index.php</Support>
   <Description>SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.[br]
-  Fork by rix1337 [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
   [b]/config[/b] Where sabnzbd should store settings, log and configuration files[br]
   [b]/downloads[/b] Where you want sab to place downlaods that have completed[br]
   [b]/incomplete-downloads[/b] Where you want sab to place downlaods that are incomplete.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Beta>False</Beta>
-<Category>Downloaders:</Category>
+  <Category>Cloud: Downloaders:</Category>
   <Date>2015-10-25</Date>
   <Changes>
     -Initial Release
@@ -9,8 +9,11 @@
   <Name>Copy</Name>
   <Support>http://lime-technology.com/forum/index.php</Support>
   <Description>
-   Tired of Dropbox? Use this!
-   Switch to Advanced View and set your login info (COPYNAME/COPYPW)
+   Copy.com
+   
+   /syncdir is your Copy folder
+   
+   Switch to Advanced View and set your login info (COPYNAME/COPYPW)!
   </Description>
   <Overview>Copy.com</Overview>
 <Project>http://sabnzbd.org/</Project>

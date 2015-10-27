@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <Beta>True</Beta>
+  <Category>Downloaders: Post-Processing</Category>
   <Name>Processing</Name>
   <Description>
   Post Process Downloaded Media Files
@@ -40,8 +42,6 @@
   </Data>
   <Banner></Banner>
   <Icon>https://rix.ninja/css/images/rix.ico</Icon>
-  <Beta>False</Beta>
-  <Category>MediaApp:Videos</Category>
   <Date>2015-10-25</Date>
   <Changes>
 	-Initial Release

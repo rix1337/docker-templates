@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
+  <Beta>True</Beta>
+  <Category>Downloaders: OCH:</Category>
   <Name>pyLoad</Name>
+  <Changes>
+    [center]-Added SSL support
+	-Added Pull #2015 (Path Prefix/modern webinterface[/center]
+  </Changes>
   <Overview>
     pyLoad is a fast, lightweight and full featured download manager for many One-Click-Hoster, container formats like DLC, video sites or just plain http/ftp links. It aims for low hardware requirements and platform independence to be runnable on all kind of systems (desktop pc, netbook, NAS, router). Despite its strict restriction it is packed full of features just like webinterface, captcha recognition, unrar and much more.
   </Overview>
@@ -9,7 +15,7 @@
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/config[/b] : set this path to where you wish pyLoad to store it's configuration.[br]
     [b]/downloads[/b] : set this path to where you wish pyLoad to store the downloaded files.[br][br]
-    Forked by rix1337
+	
 	[b]Tip:[/b] The default username is admin and the default password is admin.
   </Description>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-pyload/</Registry>
