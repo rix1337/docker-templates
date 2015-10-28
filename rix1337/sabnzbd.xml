@@ -16,8 +16,8 @@
   
   This container is based on linuxserver/docker-sabnzbd
   </Description>
-  <Overview>SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.</Overview>
-<Project>http://sabnzbd.org/</Project>
+  <Overview>Added mkvtoolnix for post-processing scripts in SABnzbd, the popular Usenet client with automation support
+  <Project>http://sabnzbd.org/</Project>
   <Registry>https://hub.docker.com/r/rix1337/docker-sabnzbd/</Registry>
   <GitHub>https://github.com/rix1337/docker-sabnzbd</GitHub>
   <Repository>rix1337/docker-sabnzbd</Repository>

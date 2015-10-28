@@ -8,8 +8,7 @@
 	-Added Pull #2015 (Path Prefix/modern webinterface[/center]
   </Changes>
   <Overview>
-    pyLoad is a fast, lightweight and full featured download manager for many One-Click-Hoster, container formats like DLC, video sites or just plain http/ftp links. It aims for low hardware requirements and platform independence to be runnable on all kind of systems (desktop pc, netbook, NAS, router). Despite its strict restriction it is packed full of features just like webinterface, captcha recognition, unrar and much more.
-  </Overview>
+    Added Path-Prefix support and a modern Webinterface for pyLoad, the fast, lightweight and full featured download manager for many One-Click-Hoster</Overview>
   <Description>
     pyLoad is a fast, lightweight and full featured download manager for many One-Click-Hoster, container formats like DLC, video sites or just plain http/ftp links. It aims for low hardware requirements and platform independence to be runnable on all kind of systems (desktop pc, netbook, NAS, router). Despite its strict restriction it is packed full of features just like webinterface, captcha recognition, unrar and much more.[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]

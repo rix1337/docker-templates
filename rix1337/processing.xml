@@ -4,9 +4,6 @@
   <Category>Downloaders: Post-Processing</Category>
   <Name>Processing</Name>
   <Description>
-  Post Process Downloaded Media Files
-  </Description>
-  <Overview>
 	This container moves and categorizes MP3/MKV/EPUB/PDF-Files from
 	/downloads to subfolders of /processing
 
@@ -29,6 +26,9 @@
 	SRT/SUB/IDX/M3U/URL-Files are considered Clutter and will be deleted from /downloads
 	
 	This container is based on smdion/docker-nginx/ and uses mkvtoolnix for Tagging/Filebot for sorting media
+  </Description>
+  <Overview>
+  Post Process Downloaded Media Files
   </Overview>
   <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-processing</Registry>
