@@ -31,6 +31,8 @@
 	[br]
 	Use with care! Only let it lose on your Files if you fully understand the consequences![br]
 	[br]
+	chmod -R 775 is run on /downloads[br]
+	[br]
 	SRT/SUB/IDX/M3U/URL-Files are considered Clutter and will be deleted from /downloads[br]
 	[br]
 	This container is based on smdion/docker-nginx/ and uses mkvtoolnix for Tagging/Filebot for sorting media
