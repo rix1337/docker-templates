@@ -14,6 +14,8 @@
    /syncdir is your Copy folder
    
    Switch to Advanced View and set your login info (COPYNAME/COPYPW)!
+   
+   This container is based on smdion/docker-nginx/
   </Description>
   <Overview>Copy.com</Overview>
 <Project>http://sabnzbd.org/</Project>

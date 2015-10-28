@@ -13,6 +13,8 @@
   [b]/config[/b] Where sabnzbd should store settings, log and configuration files[br]
   [b]/downloads[/b] Where you want sab to place downlaods that have completed[br]
   [b]/incomplete-downloads[/b] Where you want sab to place downlaods that are incomplete.
+  
+  This container is based on linuxserver/docker-sabnzbd
   </Description>
   <Overview>SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.</Overview>
 <Project>http://sabnzbd.org/</Project>

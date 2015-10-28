@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <Beta>True</Beta>
+  <Beta>False</Beta>
   <Category>Downloaders: Post-Processing</Category>
   <Name>Processing</Name>
   <Description>
   Post Process Downloaded Media Files
   </Description>
   <Overview>
-	Includes a Bash Script that automatically renames Media and adds Tags with the help of filebot/mkvtoolnix
-	Runs when Started, close it manually afterwards
+	This container moves and categorizes MP3/MKV/EPUB/PDF-Files from
+	/downloads to subfolders of /processing
+
+	These are defined by Environment Variables (defaults should give you an idea):
+	
+	$MKVTAG			All MKV's Title/Video/Audio1/Audio2/Audio3-Tags are set to this
+	$LANGUAGE		2-letter language code used for sorting Movies/Shows
+	$MUSIC			The subfolder MP3s are put into
+	$EBOOKS			The subfolder EPUBs are put into
+	$MAGAZINES		The subfolder PDFs are put into
+	$SHOWS			The subfolder MKVs of shows/anime are put into (with quality appended)
+	$MOVIES			The subfolder MKVs of movies are put into (with year of release appended)
+	$DRONE			MKVs in this subfolder of /downloads are Tagged,
+					then Moved to its equivalent in /processing for Sonarr to pick up
+					
+	The container runs headlessly and stops automatically.
+	
+	Use with care! Only let it lose on your Files if you fully understand the consequences!
+	
+	SRT/SUB/IDX/M3U/URL-Files are considered Clutter and will be deleted from /downloads
+	
+	This container is based on smdion/docker-nginx/ and uses mkvtoolnix for Tagging/Filebot for sorting media
   </Overview>
   <Support>http://lime-technology.com/forum/index.php</Support>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-processing</Registry>
@@ -22,7 +42,39 @@
     </Publish>
   </Networking>
   <Environment>
-  </Environment>    
+    <Variable>
+      <Name>MKVTAG</Name>
+      <Value>RiX</Value>
+    </Variable>
+    <Variable>
+      <Name>LANGUAGE</Name>
+      <Value>de</Value>
+    </Variable>
+    <Variable>
+      <Name>DRONE</Name>
+      <Value>Drone</Value>
+    </Variable>
+    <Variable>
+      <Name>MUSIC</Name>
+      <Value>Musik</Value>
+    </Variable>
+    <Variable>
+      <Name>EBOOKS</Name>
+      <Value>Magazine</Value>
+    </Variable>
+    <Variable>
+      <Name>SHOWS</Name>
+      <Value>Serien</Value>
+    </Variable>	
+    <Variable>
+      <Name>MOVIES</Name>
+      <Value>Filme</Value>
+    </Variable>
+    <Variable>
+      <Name>Magazine</Name>
+      <Value>Magazine</Value>
+    </Variable>	
+  </Environment>   
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/processing</HostDir>
@@ -36,14 +88,15 @@
     </Volume>
     <Volume>
       <HostDir>/mnt/user/Verarbeitung</HostDir>
-      <ContainerDir>/verarbeitung</ContainerDir>
+      <ContainerDir>/processing</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Banner></Banner>
   <Icon>https://rix.ninja/css/images/rix.ico</Icon>
-  <Date>2015-10-25</Date>
+  <Date>2015-10-28</Date>
   <Changes>
 	-Initial Release
+	-Fully working (German for now)
   </Changes>
 </Containers>

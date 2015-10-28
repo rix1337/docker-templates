@@ -17,6 +17,8 @@
     [b]/downloads[/b] : set this path to where you wish pyLoad to store the downloaded files.[br][br]
 	
 	[b]Tip:[/b] The default username is admin and the default password is admin.
+	
+	This container is based on gfjardim/docker-containers/tree/master/pyload
   </Description>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-pyload/</Registry>
   <GitHub>https://github.com/rix1337/docker-pyload</GitHub>
