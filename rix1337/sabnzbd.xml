@@ -16,7 +16,7 @@
   
   This container is based on linuxserver/docker-sabnzbd
   </Description>
-  <Overview>Added mkvtoolnix for post-processing scripts in SABnzbd, the popular Usenet client with automation support</Overwiev>
+  <Overview>Added mkvtoolnix for post-processing scripts in SABnzbd, the popular Usenet client with automation support</Overview>
   <Project>http://sabnzbd.org/</Project>
   <Registry>https://hub.docker.com/r/rix1337/docker-sabnzbd/</Registry>
   <GitHub>https://github.com/rix1337/docker-sabnzbd</GitHub>
