@@ -4,27 +4,26 @@
   <Category>Downloaders: Post-Processing</Category>
   <Name>Processing</Name>
   <Description>
-	This container moves and categorizes MP3/MKV/EPUB/PDF-Files from
-	/downloads to subfolders of /processing
-
-	These are defined by Environment Variables (defaults should give you an idea):
-	
-	$MKVTAG			All MKV's Title/Video/Audio1/Audio2/Audio3-Tags are set to this
-	$LANGUAGE		2-letter language code used for sorting Movies/Shows
-	$MUSIC			The subfolder MP3s are put into
-	$EBOOKS			The subfolder EPUBs are put into
-	$MAGAZINES		The subfolder PDFs are put into
-	$SHOWS			The subfolder MKVs of shows/anime are put into (with quality appended)
-	$MOVIES			The subfolder MKVs of movies are put into (with year of release appended)
-	$DRONE			MKVs in this subfolder of /downloads are Tagged,
-					then Moved to its equivalent in /processing for Sonarr to pick up
-					
-	The container runs headlessly and stops automatically.
-	
-	Use with care! Only let it lose on your Files if you fully understand the consequences!
-	
-	SRT/SUB/IDX/M3U/URL-Files are considered Clutter and will be deleted from /downloads
-	
+	This container moves and categorizes MP3/MKV/EPUB/PDF-Files from[br]
+	/downloads to subfolders of /processing[br]
+	[br]
+	These are defined by Environment Variables (defaults should give you an idea):[br]
+	[br]
+	$MKVTAG			All MKV's Title/Video/Audio1/Audio2/Audio3-Tags are set to this[br]
+	$LANGUAGE		2-letter language code used for sorting Movies/Shows[br]
+	$MUSIC			The subfolder MP3s are put into[br]
+	$EBOOKS			The subfolder EPUBs are put into[br]
+	$MAGAZINES		The subfolder PDFs are put into[br]
+	$SHOWS			The subfolder MKVs of shows/anime are put into (with quality appended)[br]
+	$MOVIES			The subfolder MKVs of movies are put into (with year of release appended)[br]
+	$DRONE			MKVs in this subfolder of /downloads are Tagged, then Moved to its equivalent in /processing for Sonarr to pick up[br]
+	[br]
+	The container runs headlessly and stops automatically.[br]
+	[br]
+	Use with care! Only let it lose on your Files if you fully understand the consequences![br]
+	[br]
+	SRT/SUB/IDX/M3U/URL-Files are considered Clutter and will be deleted from /downloads[br]
+	[br]
 	This container is based on smdion/docker-nginx/ and uses mkvtoolnix for Tagging/Filebot for sorting media
   </Description>
   <Overview>
