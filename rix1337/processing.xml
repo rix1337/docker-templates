@@ -30,7 +30,7 @@
 	
 	This container is based on smdion/docker-nginx/ and uses mkvtoolnix for Tagging/Filebot for sorting media
   </Overview>
-  <Support>http://lime-technology.com/forum/index.php</Support>
+  <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-processing</Registry>
   <GitHub>https://github.com/rix1337/docker-processing</GitHub>
   <Repository>rix1337/docker-processing</Repository>
