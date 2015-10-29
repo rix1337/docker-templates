@@ -33,13 +33,8 @@
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>3353</HostPort>
-        <ContainerPort>3353</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>3443</HostPort>
-        <ContainerPort>3443</ContainerPort>
+        <HostPort>3343</HostPort>
+        <ContainerPort>3343</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
