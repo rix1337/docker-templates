@@ -5,7 +5,7 @@
   <Name>PlexConnect</Name>
   <Description>
   This is a Dockerfile setup for PlexConnect (fork) - https://github.com/rix1337/PlexConnect.[br]
-  This dockerfile was forked from needo/PlexConnect docker.[br][br]
+  The container itself was forked from needo/PlexConnect.[br][br]
 
   [b][span style='color: #E80000;']Directions:[/span][/b][br]
     Note: PlexConnect by default use ports 3380, 3353 and 3443[br]
@@ -18,8 +18,9 @@
 
   [b]/mnt/cache/appdata/plexconnect[/b] : this path is used to store the PlexConnect Files.[br]
  </Description>
-  <Registry>https://registry.hub.docker.com/u/rix1337/plexconnect/</Registry>
-  <Repository>rix1337/plexconnect</Repository>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-plexconnect/</Registry>
+  <Repository>rix1337/docker-plexconnect</Repository>
+  <GitHub>https://github.com/rix1337/docker-plexconnect</GitHub>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
