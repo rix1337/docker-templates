@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Proxy: SSH/SOCKS:</Category>
+  <Date>2015-10-29</Date>
+  <Changes>
+    -Initial Release
+</Changes>
+  <Name>Socks</Name>
+  <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
+  <Description>
+	Shares ssh connection to $USERANDHOST (foo@ba.r) with $PASSWORD on $SOCKSPORT
+  </Description>
+  <Overview>SSH to Socks Proxy Tool</Overview>
+<Project>http://sabnzbd.org/</Project>
+  <Registry>https://hub.docker.com/r/rix1337/docker-socks/</Registry>
+  <GitHub>https://github.com/rix1337/docker-socks</GitHub>
+  <Repository>rix1337/docker-socks</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>USERANDHOST</Name>
+      <Value>name@host.adr</Value>
+    </Variable>
+    <Variable>
+      <Name>PASSWORD</Name>
+      <Value>Password</Value>
+    </Variable>
+    <Variable>
+      <Name>SOCKSPORT</Name>
+      <Value>10101</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+</Networking>
+  <Data>
+  </Data>
+  <Icon>https://rix.ninja/css/images/rix.ico</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
