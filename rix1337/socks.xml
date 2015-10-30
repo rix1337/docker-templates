@@ -9,7 +9,7 @@
   <Name>Socks</Name>
   <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
   <Description>
-	Shares ssh connection to $USERANDHOST (foo@ba.r) with $PASSWORD on $SOCKSPORT
+	Shares ssh connection to $USER@$HOST with $PASSWORD on $SOCKSPORT
   </Description>
   <Overview>SSH to Socks Proxy Tool</Overview>
 <Project>http://sabnzbd.org/</Project>
@@ -20,12 +20,16 @@
   <Privileged>false</Privileged>
   <Environment>
     <Variable>
-      <Name>USERANDHOST</Name>
-      <Value>name@host.adr</Value>
+      <Name>USER</Name>
+      <Value>username</Value>
+    </Variable>
+    <Variable>
+      <Name>Host</Name>
+      <Value>host.name</Value>
     </Variable>
     <Variable>
       <Name>PASSWORD</Name>
-      <Value>Password</Value>
+      <Value>password</Value>
     </Variable>
     <Variable>
       <Name>SOCKSPORT</Name>
