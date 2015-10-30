@@ -24,20 +24,13 @@
   </Environment>
   <Networking>
     <Mode>host</Mode>
-    <Publish>
-      <Port>
-        <HostPort>3380</HostPort>
-        <ContainerPort>3380</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>3343</HostPort>
-        <ContainerPort>3343</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
   </Networking>
   <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/plexconnect</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Version></Version>
   <WebUI>http://[IP]:[PORT:3380]/</WebUI>
