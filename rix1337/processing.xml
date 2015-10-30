@@ -81,7 +81,7 @@
       <Value>Filme</Value>
     </Variable>
     <Variable>
-      <Name>Magazine</Name>
+      <Name>MAGAZINES</Name>
       <Value>Magazine</Value>
     </Variable>	
   </Environment>   
