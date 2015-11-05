@@ -11,13 +11,22 @@
 </Changes>
 <Category>Tools:</Category>
   <Support>http://lime-technology.com/forum/index.php?topic=37209</Support>
-  <Description>Krusader is a fully featured file manager, highly configurable. [br][br][b][span style="color: red"]BE VERY CAREFUL AS YOU CAN DELETE THINGS YOU MAY NOT INTEND TO[br]I AM NOT RESPONSIBLE FOR YOUR BAD DECISIONS.[/span][br]Map /UNRAID to a local folder tree you wish to perform actions on. Add other mappings manually if you wish.
+  <Description>Krusader is a fully featured file manager, highly configurable. [br][br]
+  
+   This container was forked from sparklyballs/krusader[br]
+   Similarly to MakeMKV this container mounts /dev/sr0 (eg. your BluRay drive) at /media/bluray[br][br]
+  
+  [b][span style="color: red"]BE VERY CAREFUL AS YOU CAN DELETE THINGS YOU MAY NOT INTEND TO[br]
+  I AM NOT RESPONSIBLE FOR YOUR BAD DECISIONS.[/span][br]
+  Map /UNRAID to a local folder tree you wish to perform actions on. Add other mappings manually if you wish.
   </Description>
-  <Overview> This container was forked from tobbenb/docker-containers/tree/master/makemkv-rdp.[br]Krusader is a highly configurable, fully featured file manager. Full gui in a RDP container accessible via browser.</Overview>
-  <Registry>https://registry.hub.docker.com/u/sparklyballs/krusader/</Registry>
-  <Repository>sparklyballs/krusader</Repository>
+  <Overview>Added automatic drive mounting at /mnt/bluray. Krusader is a highly configurable, fully featured file manager. Full gui in a RDP container accessible via browser.
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-krusader/</Registry>
+  <Repository>rix1337/docker-krusader</Repository>
+  <GitHub>https://github.com/rix1337/docker-krusader</GitHub>
   <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
 <Environment>
 <Variable>
 <Name>WIDTH</Name>
@@ -40,17 +49,17 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/</HostDir>
       <ContainerDir>/UNRAID</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/cache/appdata/krusader</HostDir>
       <ContainerDir>/nobody/.kde</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:8080]/#/client/c/Krusader</WebUI>
+  <WebUI>http://[IP]:[PORT:13370]/#/client/c/Krusader</WebUI>
   <Banner></Banner>
   <Icon>http://i.imgur.com/uf0NDSm.png</Icon>
   <ExtraParams>--device=/dev/sr0:/dev/sr0</ExtraParams>
