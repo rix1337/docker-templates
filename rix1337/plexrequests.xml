@@ -14,9 +14,9 @@
     Are people constantly asking you to add new content to your Plex Server? Frequent late night texts asking for a new release that's not out yet? Wouldn't it be easier to just send them to a website where they could submit their requests? Enter Plex Requests!
   </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=39413.0</Support>
-  <Registry>https://registry.hub.docker.com/u/aptalca/docker-plexrequests/</Registry>
-  <GitHub>https://github.com/aptalca/docker-plexrequests</GitHub>
-  <Repository>aptalca/docker-plexrequests</Repository>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-plexrequests/</Registry>
+  <GitHub>https://github.com/rix1337/docker-plexrequests</GitHub>
+  <Repository>rix1337/docker-plexrequests</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
