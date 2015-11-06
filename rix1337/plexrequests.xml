@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>PlexRequests</Name>
+  <Description>
+    Simple automated way for users to request new content for Plex [br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where the PLex Requests configuration and library files will reside[br][br]
+    Don't forget to enter in the host port and the config folder location. [br][br]
+    [span style='color: #E80000;']3000[/span] is the WebUI port[br]
+    To access the Plex Requests GUI, open the WebUI. See the following link for setup instructions: https://github.com/lokenx/plexrequests-meteor/blob/master/README.md [br][br]
+    By default, the master/stable version is installed. If you would like to switch to a different branch (for testing or development purposes), set the BRANCH variable to the specific branch name in Advanced View.[br]
+  </Description>
+  <Overview>
+    Are people constantly asking you to add new content to your Plex Server? Frequent late night texts asking for a new release that's not out yet? Wouldn't it be easier to just send them to a website where they could submit their requests? Enter Plex Requests!
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=39413.0</Support>
+  <Registry>https://registry.hub.docker.com/u/aptalca/docker-plexrequests/</Registry>
+  <GitHub>https://github.com/aptalca/docker-plexrequests</GitHub>
+  <Repository>aptalca/docker-plexrequests</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol></Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>BRANCH</Name>
+      <Value>master</Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/mnt/cache/appdata/plexrequests</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:3000]/plexrequests</WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/4RhSj6J.png</Icon>
+  <Beta>False</Beta>
+  <Category>Cloud: Downloaders: MediaServer:Video</Category>
+  <Changes>
+    [center][font size=5]PlexRequests Change Log[/font][/center]
+
+    [font size=4]2015.11.02[/font]
+    - Previous meteor update was preventing a git pull, this version fixes that issue
+
+    [font size=4]2015.08.09[/font]
+    - EDGE variable is deprecated. Please use the BRANCH variable to define specific branch (default is "master")
+    - Implemented update mechanism for meteor on container start
+    
+    [font size=4]2015.05.19[/font]
+    - Minor update - EDGE=1 variable added to switch to the dev branch (under Advanced View)
+    
+    [font size=4]2015.05.18[/font]
+    - Initial Release
+
+  </Changes>
+  <Date>2015-11-02</Date>
+</Containers>
