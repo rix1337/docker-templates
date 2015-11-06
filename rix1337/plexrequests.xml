@@ -49,8 +49,8 @@
   </Environment>    
   <Data>
     <Volume>
-      <HostDir></HostDir>
-      <ContainerDir>/mnt/cache/appdata/plexrequests</ContainerDir>
+      <HostDir>/mnt/cache/appdata/plexrequests</HostDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
