@@ -12,8 +12,13 @@
 	You therefore need these iptables rules in your unRAID go script:[br][br]
 	
 	# Fix Ports for PlexConnect[br]
-	iptables -t nat -A PREROUTING -s 1.3.3.33/32 -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 3380[br]
-	iptables -t nat -A PREROUTING -s 1.3.3.33/32 -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 3343[br][br]
+	iptables -t nat -A PREROUTING -s 1.3.3.4/32 -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 3380[br]
+	iptables -t nat -A PREROUTING -s 1.3.3.4/32 -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 3343[br][br]
+	
+	In the Plex Web App under Settings > Server > Network > List of networks that are allowed without auth[br]
+	Set your unRAID and ATV IP including mask to get images working properly[br][br]
+	
+	1.3.3.1/255.255.255.0,1.3.3.4/255.255.255.0
  </Description>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-plexconnect/</Registry>
   <Repository>rix1337/docker-plexconnect</Repository>
