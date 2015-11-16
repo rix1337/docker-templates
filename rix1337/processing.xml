@@ -103,7 +103,7 @@
     </Volume>
   </Data>
   <Banner></Banner>
-  <Icon>https://rix.ninja/css/images/rix.ico</Icon>
+  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/processing.png</Icon>
   <Date>2015-10-28</Date>
   <Changes>
 	-Initial Release
