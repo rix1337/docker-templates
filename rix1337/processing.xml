@@ -22,6 +22,8 @@
 	The subfolder PDFs are put into[br][br]
 	[b]$SHOWS[/b][br]
 	The subfolder MKVs of shows/anime are put into (with quality appended)[br][br]
+	[b]$3DMOVIES[/b][br]
+	The subfolder MKVs of 3D movies are put into (with year of release and 3D.H-SBS appended)[br][br]
 	[b]$MOVIES[/b][br]
 	The subfolder MKVs of movies are put into (with year of release appended)[br][br]
 	[b]$DRONE[/b][br]
@@ -70,11 +72,15 @@
     </Variable>
     <Variable>
       <Name>EBOOKS</Name>
-      <Value>Magazine</Value>
+      <Value>Ebooks</Value>
     </Variable>
     <Variable>
       <Name>SHOWS</Name>
       <Value>Serien</Value>
+    </Variable>
+    <Variable>
+      <Name>3DMOVIES</Name>
+      <Value>3D-Filme</Value>
     </Variable>	
     <Variable>
       <Name>MOVIES</Name>
@@ -82,7 +88,7 @@
     </Variable>
     <Variable>
       <Name>MAGAZINES</Name>
-      <Value>Magazine</Value>
+      <Value>Ebooks</Value>
     </Variable>	
   </Environment>   
   <Data>
