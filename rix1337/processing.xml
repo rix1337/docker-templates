@@ -22,7 +22,7 @@
 	The subfolder PDFs are put into[br][br]
 	[b]$SHOWS[/b][br]
 	The subfolder MKVs of shows/anime are put into (with quality appended)[br][br]
-	[b]$3DMOVIES[/b][br]
+	[b]$HSBS[/b][br]
 	The subfolder MKVs of 3D movies are put into (with year of release and 3D.H-SBS appended)[br][br]
 	[b]$MOVIES[/b][br]
 	The subfolder MKVs of movies are put into (with year of release appended)[br][br]
@@ -79,7 +79,7 @@
       <Value>Serien</Value>
     </Variable>
     <Variable>
-      <Name>3DMOVIES</Name>
+      <Name>HSBS</Name>
       <Value>3D-Filme</Value>
     </Variable>	
     <Variable>
