@@ -28,7 +28,7 @@
       <Value>Your SSH username</Value>
     </Variable>
     <Variable>
-      <Name>Host</Name>
+      <Name>HOST</Name>
       <Value>Your SSH host</Value>
     </Variable>
     <Variable>
