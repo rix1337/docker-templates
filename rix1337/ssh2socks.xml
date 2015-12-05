@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Beta>False</Beta>
-  <Category>Proxy: Socks</Category>
+  <Category>Network:Proxy</Category>
   <Date>2015-12-01</Date>
   <Changes>
     -Initial Release
