@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Beta>False</Beta>
-  <Category>Proxy: Socks</Category>
+  <Category>Network:Proxy</Category>
   <Date>2015-12-01</Date>
   <Changes>
     -Initial Release
@@ -9,7 +9,7 @@
   <Name>ssh2socks</Name>
   <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
   <Description>
-   ssh2socks passes through an SSH tunnel as a local SOCKS proxy.
+   ssh2socks passes through a SSH tunnel as a local SOCKS proxy.
    
    Switch to Advanced View and set your login info (User, Host, Password)!
    

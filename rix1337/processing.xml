@@ -5,13 +5,16 @@
   <Name>Processing</Name>
   <Description>
 	[b]This container moves and categorizes MP3/MKV/EPUB/PDF-Files from[br]
-	/downloads to subfolders of /processing[br][/b]
+	subfolders $DOWNLOADED to $PROCESSED of /downloads[br][/b]
 	[br]
 	These are defined by Environment Variables (defaults should give you an idea):[br]
 	[br]
+	[b]$DOWNLOADED[/b][br]
+	The subfolder of /downloads where your downloads reside[br][br]
+	[b]$PROCESSED[/b][br]
+	The subfolder of /downloads to output files when processing[br][br]
 	[b]$MKVTAG[/b][br]
 	All MKV's Title/Video/Audio1/Audio2/Audio3-Tags are set to this[br][br]
-	
 	[b]$LANGUAGE[/b][br]
 	2-letter language code used for sorting Movies/Shows[br][br]
 	[b]$MUSIC[/b][br]
@@ -63,6 +66,14 @@
       <Value>de</Value>
     </Variable>
     <Variable>
+      <Name>DOWNLOADED</Name>
+      <Value>Downloads</Value>
+    </Variable>
+    <Variable>
+      <Name>PROCESSED</Name>
+      <Value>Verarbeitung</Value>
+    </Variable>
+    <Variable>
       <Name>DRONE</Name>
       <Value>Drone</Value>
     </Variable>
@@ -88,7 +99,7 @@
     </Variable>
     <Variable>
       <Name>MAGAZINES</Name>
-      <Value>Ebooks</Value>
+      <Value>Magazine</Value>
     </Variable>	
   </Environment>   
   <Data>
@@ -100,11 +111,6 @@
     <Volume>
       <HostDir>/mnt/user/Downloads</HostDir>
       <ContainerDir>/downloads</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/Verarbeitung</HostDir>
-      <ContainerDir>/processing</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
