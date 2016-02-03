@@ -9,7 +9,7 @@
   <Name>Copy</Name>
   <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
   <Description>
-   Copy.com
+   Copy.com (DISCONTINUED AFTER MAY 1ST 2016! - BACKUP NOW!)
    
    /syncdir is your Copy folder
    
@@ -17,7 +17,7 @@
    
    This container is based on smdion/docker-nginx/
   </Description>
-  <Overview>Copy.com</Overview>
+  <Overview>Copy.com (DISCONTINUED AFTER MAY 1ST 2016! - BACKUP NOW!)</Overview>
 <Project>http://sabnzbd.org/</Project>
   <Registry>https://hub.docker.com/r/rix1337/docker-copy/</Registry>
   <GitHub>https://github.com/rix1337/docker-copy</GitHub>
