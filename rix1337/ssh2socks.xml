@@ -16,7 +16,7 @@
    This container is based on smdion/docker-nginx/
   </Description>
   <Overview>Passes through an SSH tunnel as a local SOCKS proxy</Overview>
-<Project>http://sabnzbd.org/</Project>
+<Project></Project>
   <Registry>https://hub.docker.com/r/rix1337/docker-ssh2socks/</Registry>
   <GitHub>https://github.com/rix1337/docker-ssh2socks</GitHub>
   <Repository>rix1337/docker-ssh2socks</Repository>
