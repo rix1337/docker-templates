@@ -3,6 +3,7 @@
   <Beta>False</Beta>
 <Category>Downloaders:</Category>
   <Name>FlexGet</Name>
+  <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
   <Description>
     FlexGet is a multipurpose automation tool for content. It can use different kinds of sources like RSS-feeds, html pages, csv files, search engines and there are even plugins for sites that do not provide any kind of useful feeds.(http://flexget.com/)[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
