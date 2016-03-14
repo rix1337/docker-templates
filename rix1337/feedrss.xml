@@ -24,7 +24,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/feedrss</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/config/src</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
