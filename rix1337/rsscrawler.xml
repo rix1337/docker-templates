@@ -2,18 +2,18 @@
 <Containers>
   <Beta>True</Beta>
   <Category>Downloaders</Category>
-  <Name>FeedRss</Name>
+  <Name>RSScrawler</Name>
   <Description>
 	[b]This container is highly experimental[br]
-	It uses RSS feeds to create JDownloader crawljobs.
+	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs
   </Description>
   <Overview>
   Experimental: FeedRss uses RSS feeds to create JDownloader crawljobs.
   </Overview>
   <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
-  <Registry>https://registry.hub.docker.com/u/rix1337/docker-feedrss</Registry>
-  <GitHub>https://github.com/rix1337/docker-feedrss</GitHub>
-  <Repository>rix1337/docker-feedrss</Repository>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-rsscrawler</Registry>
+  <GitHub>https://github.com/rix1337/docker-rsscrawler</GitHub>
+  <Repository>rix1337/docker-rsscrawler</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
@@ -23,8 +23,8 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/feedrss</HostDir>
-      <ContainerDir>/config/src</ContainerDir>
+      <HostDir>/mnt/cache/appdata/rsscrawler</HostDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
@@ -34,7 +34,7 @@
     </Volume>
   </Data>
   <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/feedrss.png</Icon>
+  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/rsscrawler.png</Icon>
   <Date>2016-03-11</Date>
   <Changes>
 	-Initial Release
