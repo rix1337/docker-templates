@@ -48,6 +48,6 @@
 </Networking>
   <Data>
   </Data>
-   <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/socks.png</Icon>
+   <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/ssh2socks.png</Icon>
   <ExtraParams></ExtraParams>
 </Container>
