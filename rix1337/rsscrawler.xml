@@ -8,7 +8,7 @@
 	Only useful for those looking for very specific, automated Downloads.
   </Description>
   <Overview>
-  FeedRss uses RSS feeds to create JDownloader crawljobs.
+  RSScrawler uses pre-defined RSS feeds to create JDownloader crawljobs.
   </Overview>
   <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-rsscrawler</Registry>
