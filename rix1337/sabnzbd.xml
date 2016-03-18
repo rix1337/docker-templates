@@ -1,48 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Container>
-  <Beta>False</Beta>
-  <Category>Downloaders: Usenet</Category>
-  <Date>2015-10-24</Date>
-  <Changes>
-    [center]-Added mkvtoolnix (for post-processing use)[/center]
-</Changes>
+<?xml version="1.0"?>
+<Container version="2">
   <Name>sabnzbd</Name>
-  <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
-  <Description>SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.[br]
-  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-  [b]/config[/b] Where sabnzbd should store settings, log and configuration files[br]
-  [b]/downloads[/b] Where you want sab to place downlaods that have completed[br]
-  [b]/incomplete-downloads[/b] Where you want sab to place downlaods that are incomplete.
-  
-  This container is based on linuxserver/docker-sabnzbd
-  </Description>
-  <Overview>Added mkvtoolnix for post-processing scripts in SABnzbd, the popular Usenet client with automation support</Overview>
-  <Project>http://sabnzbd.org/</Project>
-  <Registry>https://hub.docker.com/r/rix1337/docker-sabnzbd/</Registry>
-  <GitHub>https://github.com/rix1337/docker-sabnzbd</GitHub>
   <Repository>rix1337/docker-sabnzbd</Repository>
-  <BindTime>true</BindTime>
+  <Registry>https://hub.docker.com/r/rix1337/docker-sabnzbd/</Registry>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Environment>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
-  </Environment>
+  <Support/>
+  <Overview>SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.[br]&#xD;
+[b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+[b]/config[/b] Where sabnzbd should store settings, log and configuration files[br]&#xD;
+[b]/downloads[/b] Where you want sab to place downlaods that have completed[br]&#xD;
+[b]/incomplete-downloads[/b] Where you want sab to place downlaods that are incomplete.&#xD;
+</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-icon.png</Icon>
+  <ExtraParams/>
+  <Description>SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.[br]&#xD;
+[b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+[b]/config[/b] Where sabnzbd should store settings, log and configuration files[br]&#xD;
+[b]/downloads[/b] Where you want sab to place downlaods that have completed[br]&#xD;
+[b]/incomplete-downloads[/b] Where you want sab to place downlaods that are incomplete.&#xD;
+</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
-  <Port>
-        <HostPort>8080</HostPort>
+      <Port>
+        <HostPort>1334</HostPort>
         <ContainerPort>8080</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-   </Publish>
-</Networking>
+    </Publish>
+  </Networking>
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/sabnzbd</HostDir>
@@ -50,7 +39,7 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/Downloads/</HostDir>
+      <HostDir>/mnt/user/Downloads/Downloads/</HostDir>
       <ContainerDir>/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -60,8 +49,22 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-<WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <Banner>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-banner.png</Banner>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-icon.png</Icon>
-  <ExtraParams></ExtraParams>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Port 1" Target="8080" Default="1334" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">1334</Config>
+  <Config Name="Path 1" Target="/config" Default="/mnt/cache/appdata/sabnzbd" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/sabnzbd</Config>
+  <Config Name="Path 2" Target="/downloads" Default="/mnt/user/Downloads/Downloads/" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/Downloads/</Config>
+  <Config Name="Path 3" Target="/incomplete-downloads" Default="/mnt/cache/appdata/tmp" Mode="rw" Description="Container Path: /incomplete-downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/tmp</Config>
+  <Config Name="Variable 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Variable 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
 </Container>
