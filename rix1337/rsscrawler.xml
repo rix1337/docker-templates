@@ -42,6 +42,6 @@
     </Variable>
   </Environment>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/RSScrawler" Mode="rw" Description="Container Path: /config" Type="Path" Display="hidden" Required="true" Mask="false">/mnt/user/appdata/RSScrawler</Config>
-  <Config Name="Path 2" Target="/jd2" Default="/mnt/cache/appdata/jdownloader/jd2/folderwatch" Mode="rw" Description="Container Path: /jd2" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/jdownloader/jd2/folderwatch</Config>
-  <Config Name="LOGLEVEL" Target="LOGLEVEL" Default="INFO" Mode="" Description="Container Variable: LOGLEVEL" Type="Variable" Display="always" Required="true" Mask="false">INFO</Config>
+  <Config Name="Path 2" Target="/jd2" Default="/mnt/cache/appdata/jdownloader/jd2/folderwatch" Mode="rw" Description="Your JDownloader 2's folderwatch subdir" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/jdownloader/jd2/folderwatch</Config>
+  <Config Name="LOGLEVEL" Target="LOGLEVEL" Default="INFO" Mode="" Description="Level which program should log messages (eg. CRITICAL, ERROR, WARNING, INFO, DEBUG, NOTSET )" Type="Variable" Display="always" Required="true" Mask="false">INFO</Config>
 </Container>
