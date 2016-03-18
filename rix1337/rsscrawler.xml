@@ -1,31 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Beta>False</Beta>
-  <Category>Downloaders</Category>
+<?xml version="1.0"?>
+<Container version="2">
   <Name>RSScrawler</Name>
-  <Description>
-	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs[br]
-	Only useful for those looking for very specific, automated Downloads. [br][br]
-	
-	Loglevel is supported through environment variables (Default: INFO)
-  </Description>
-  <Overview>
-  RSScrawler uses pre-defined RSS feeds to create JDownloader crawljobs.
-  </Overview>
-  <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
-  <Registry>https://registry.hub.docker.com/u/rix1337/docker-rsscrawler</Registry>
-  <GitHub>https://github.com/rix1337/docker-rsscrawler</GitHub>
   <Repository>rix1337/docker-rsscrawler</Repository>
-  <BindTime>true</BindTime>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-rsscrawler</Registry>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
-    <Networking>
+  <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
+  <Overview>&#xD;
+	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs[br]&#xD;
+	Only useful for those looking for very specific, automated Downloads.&#xD;
+  </Overview>
+  <Category>Downloaders</Category>
+  <WebUI/>
+  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/rsscrawler.png</Icon>
+  <ExtraParams/>
+  <Description>&#xD;
+	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs[br]&#xD;
+	Only useful for those looking for very specific, automated Downloads.&#xD;
+  </Description>
+  <Networking>
     <Mode>bridge</Mode>
-    <Publish>
-    </Publish>
+    <Publish/>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/rsscrawler</HostDir>
+      <HostDir>/mnt/user/appdata/RSScrawler</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -42,13 +41,7 @@
       <Mode/>
     </Variable>
   </Environment>
-    <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/RSScrawler" Mode="rw" Description="Container Path: /config" Type="Path" Display="hidden" Required="true" Mask="false">/mnt/user/appdata/RSScrawler</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/RSScrawler" Mode="rw" Description="Container Path: /config" Type="Path" Display="hidden" Required="true" Mask="false">/mnt/user/appdata/RSScrawler</Config>
   <Config Name="Path 2" Target="/jd2" Default="/mnt/cache/appdata/jdownloader/jd2/folderwatch" Mode="rw" Description="Container Path: /jd2" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/jdownloader/jd2/folderwatch</Config>
   <Config Name="LOGLEVEL" Target="LOGLEVEL" Default="INFO" Mode="" Description="Container Variable: LOGLEVEL" Type="Variable" Display="always" Required="true" Mask="false">INFO</Config>
-  <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/rsscrawler.png</Icon>
-  <Date>2016-03-16</Date>
-  <Changes>
-	-Out of Beta, Script is up and running
-  </Changes>
-</Containers>
+</Container>
