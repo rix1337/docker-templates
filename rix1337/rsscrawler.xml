@@ -5,7 +5,9 @@
   <Name>RSScrawler</Name>
   <Description>
 	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs[br]
-	Only useful for those looking for very specific, automated Downloads.
+	Only useful for those looking for very specific, automated Downloads. [br][br]
+	
+	Loglevel is supported through environment variables (Default: INFO)
   </Description>
   <Overview>
   RSScrawler uses pre-defined RSS feeds to create JDownloader crawljobs.
@@ -21,6 +23,11 @@
     <Publish>
     </Publish>
   </Networking>
+    <Environment>
+    <Variable>
+      <Name>LOGLEVEL</Name>
+      <Value>INFO</Value>
+    </Variable>
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/rsscrawler</HostDir>
