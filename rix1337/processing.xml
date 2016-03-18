@@ -161,15 +161,15 @@ This container is based on smdion/docker-nginx/ and uses mkvtoolnix for Tagging/
   </Environment>
   <Config Name="Path 1" Target="/log" Default="/mnt/cache/appdata/processing" Mode="rw" Description="Container Path: /log" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/processing</Config>
   <Config Name="Path 2" Target="/downloads" Default="/mnt/user/Downloads" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads</Config>
-  <Config Name="Variable 1" Target="MKVTAG" Default="RiX" Mode="" Description="Container Variable: MKVTAG" Type="Variable" Display="always" Required="false" Mask="false">RiX</Config>
-  <Config Name="Variable 2" Target="LANGUAGE" Default="de" Mode="" Description="Container Variable: LANGUAGE" Type="Variable" Display="always" Required="false" Mask="false">de</Config>
-  <Config Name="Variable 3" Target="DOWNLOADED" Default="Downloads" Mode="" Description="Container Variable: DOWNLOADED" Type="Variable" Display="always" Required="false" Mask="false">Downloads</Config>
-  <Config Name="Variable 4" Target="PROCESSED" Default="Verarbeitung" Mode="" Description="Container Variable: PROCESSED" Type="Variable" Display="always" Required="false" Mask="false">Verarbeitung</Config>
-  <Config Name="Variable 5" Target="DRONE" Default="Drone" Mode="" Description="Container Variable: DRONE" Type="Variable" Display="always" Required="false" Mask="false">Drone</Config>
-  <Config Name="Variable 6" Target="MUSIC" Default="Musik" Mode="" Description="Container Variable: MUSIC" Type="Variable" Display="always" Required="false" Mask="false">Musik</Config>
-  <Config Name="Variable 7" Target="EBOOKS" Default="Ebooks" Mode="" Description="Container Variable: EBOOKS" Type="Variable" Display="always" Required="false" Mask="false">Ebooks</Config>
-  <Config Name="Variable 8" Target="SHOWS" Default="Serien" Mode="" Description="Container Variable: SHOWS" Type="Variable" Display="always" Required="false" Mask="false">Serien</Config>
-  <Config Name="Variable 9" Target="HSBS" Default="3D-Filme" Mode="" Description="Container Variable: HSBS" Type="Variable" Display="always" Required="false" Mask="false">3D-Filme</Config>
-  <Config Name="Variable 10" Target="MOVIES" Default="Filme" Mode="" Description="Container Variable: MOVIES" Type="Variable" Display="always" Required="false" Mask="false">Filme</Config>
-  <Config Name="Variable 11" Target="MAGAZINES" Default="Magazine" Mode="" Description="Container Variable: MAGAZINES" Type="Variable" Display="always" Required="false" Mask="false">Magazine</Config>
+  <Config Name="Variable 1" Target="MKVTAG" Default="RiX" Mode="" Description="All MKV's Title/Video/Audio1/Audio2/Audio3-Tags are set to this" Type="Variable" Display="always" Required="true" Mask="false">RiX</Config>
+  <Config Name="Variable 2" Target="LANGUAGE" Default="de" Mode="" Description="2-letter language code used for sorting Movies/Shows" Type="Variable" Display="always" Required="true" Mask="false">de</Config>
+  <Config Name="Variable 3" Target="DOWNLOADED" Default="Downloads" Mode="" Description="The subfolder of /downloads where your downloads reside" Type="Variable" Display="always" Required="true" Mask="false">Downloads</Config>
+  <Config Name="Variable 4" Target="PROCESSED" Default="Verarbeitung" Mode="" Description="The subfolder of /downloads to output files when processing" Type="Variable" Display="always" Required="true" Mask="false">Verarbeitung</Config>
+  <Config Name="Variable 5" Target="DRONE" Default="Drone" Mode="" Description="MKVs in this subfolder of /downloads are Tagged, then Moved to its equivalent in /processing for Sonarr to pick up" Type="Variable" Display="always" Required="true" Mask="false">Drone</Config>
+  <Config Name="Variable 6" Target="MUSIC" Default="Musik" Mode="" Description="The subfolder MP3s are put into" Type="Variable" Display="always" Required="true" Mask="false">Musik</Config>
+  <Config Name="Variable 7" Target="EBOOKS" Default="Ebooks" Mode="" Description="The subfolder EPUBs are put into" Type="Variable" Display="always" Required="true" Mask="false">Ebooks</Config>
+  <Config Name="Variable 8" Target="SHOWS" Default="Serien" Mode="" Description="The subfolder MKVs of shows/anime are put into (with quality appended)" Type="Variable" Display="always" Required="true" Mask="false">Serien</Config>
+  <Config Name="Variable 9" Target="HSBS" Default="3D-Filme" Mode="" Description="The subfolder MKVs of 3D movies are put into (with year of release and 3D.H-SBS appended)" Type="Variable" Display="always" Required="true" Mask="false">3D-Filme</Config>
+  <Config Name="Variable 10" Target="MOVIES" Default="Filme" Mode="" Description="The subfolder MKVs of movies are put into (with year of release appended)" Type="Variable" Display="always" Required="true" Mask="false">Filme</Config>
+  <Config Name="Variable 11" Target="MAGAZINES" Default="Magazine" Mode="" Description="The subfolder PDFs are put into" Type="Variable" Display="always" Required="true" Mask="false">Magazine</Config>
 </Container>
