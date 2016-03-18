@@ -1,107 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Beta>False</Beta>
-  <Category>Downloaders: Post-Processing</Category>
+<?xml version="1.0"?>
+<Container version="2">
   <Name>Processing</Name>
-  <Description>
-	[b]This container moves and categorizes MP3/MKV/EPUB/PDF-Files from[br]
-	subfolders $DOWNLOADED to $PROCESSED of /downloads[br][/b]
-	[br]
-	These are defined by Environment Variables (defaults should give you an idea):[br]
-	[br]
-	[b]$DOWNLOADED[/b][br]
-	The subfolder of /downloads where your downloads reside[br][br]
-	[b]$PROCESSED[/b][br]
-	The subfolder of /downloads to output files when processing[br][br]
-	[b]$MKVTAG[/b][br]
-	All MKV's Title/Video/Audio1/Audio2/Audio3-Tags are set to this[br][br]
-	[b]$LANGUAGE[/b][br]
-	2-letter language code used for sorting Movies/Shows[br][br]
-	[b]$MUSIC[/b][br]
-	The subfolder MP3s are put into[br][br]
-	[b]$EBOOKS[/b][br]
-	The subfolder EPUBs are put into[br][br]
-	[b]$MAGAZINES[/b][br]
-	The subfolder PDFs are put into[br][br]
-	[b]$SHOWS[/b][br]
-	The subfolder MKVs of shows/anime are put into (with quality appended)[br][br]
-	[b]$HSBS[/b][br]
-	The subfolder MKVs of 3D movies are put into (with year of release and 3D.H-SBS appended)[br][br]
-	[b]$MOVIES[/b][br]
-	The subfolder MKVs of movies are put into (with year of release appended)[br][br]
-	[b]$DRONE[/b][br]
-	MKVs in this subfolder of /downloads are Tagged, then Moved to its equivalent in /processing for Sonarr to pick up[br][br]
-	[br]
-	The container runs headlessly and stops automatically.[br]
-	[br]
-	Use with care! Only let it lose on your Files if you fully understand the consequences![br]
-	[br]
-	chmod -R 775 is run on /downloads[br]
-	[br]
-	SRT/SUB/IDX/M3U/URL-Files are considered Clutter and will be deleted from /downloads[br]
-	[br]
-	This container is based on smdion/docker-nginx/ and uses mkvtoolnix for Tagging/Filebot for sorting media
-  </Description>
-  <Overview>
-  Post Process Downloaded Media Files
-  </Overview>
-  <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
-  <Registry>https://registry.hub.docker.com/u/rix1337/docker-processing</Registry>
-  <GitHub>https://github.com/rix1337/docker-processing</GitHub>
   <Repository>rix1337/docker-processing</Repository>
-  <BindTime>true</BindTime>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-processing</Registry>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
-    <Networking>
+  <Support/>
+  <Overview>[b]This container moves and categorizes MP3/MKV/EPUB/PDF-Files from[br]&#xD;
+subfolders $DOWNLOADED to $PROCESSED of /downloads[br][/b]&#xD;
+[br]&#xD;
+These are defined by Environment Variables (defaults should give you an idea):[br]&#xD;
+[br]&#xD;
+[b]$DOWNLOADED[/b][br]&#xD;
+The subfolder of /downloads where your downloads reside[br][br]&#xD;
+[b]$PROCESSED[/b][br]&#xD;
+The subfolder of /downloads to output files when processing[br][br]&#xD;
+[b]$MKVTAG[/b][br]&#xD;
+All MKV's Title/Video/Audio1/Audio2/Audio3-Tags are set to this[br][br]&#xD;
+[b]$LANGUAGE[/b][br]&#xD;
+2-letter language code used for sorting Movies/Shows[br][br]&#xD;
+[b]$MUSIC[/b][br]&#xD;
+The subfolder MP3s are put into[br][br]&#xD;
+[b]$EBOOKS[/b][br]&#xD;
+The subfolder EPUBs are put into[br][br]&#xD;
+[b]$MAGAZINES[/b][br]&#xD;
+The subfolder PDFs are put into[br][br]&#xD;
+[b]$SHOWS[/b][br]&#xD;
+The subfolder MKVs of shows/anime are put into (with quality appended)[br][br]&#xD;
+[b]$HSBS[/b][br]&#xD;
+The subfolder MKVs of 3D movies are put into (with year of release and 3D.H-SBS appended)[br][br]&#xD;
+[b]$MOVIES[/b][br]&#xD;
+The subfolder MKVs of movies are put into (with year of release appended)[br][br]&#xD;
+[b]$DRONE[/b][br]&#xD;
+MKVs in this subfolder of /downloads are Tagged, then Moved to its equivalent in /processing for Sonarr to pick up[br][br]&#xD;
+[br]&#xD;
+The container runs headlessly and stops automatically.[br]&#xD;
+[br]&#xD;
+Use with care! Only let it lose on your Files if you fully understand the consequences![br]&#xD;
+[br]&#xD;
+chmod -R 775 is run on /downloads[br]&#xD;
+[br]&#xD;
+SRT/SUB/IDX/M3U/URL-Files are considered Clutter and will be deleted from /downloads[br]&#xD;
+[br]&#xD;
+This container is based on smdion/docker-nginx/ and uses mkvtoolnix for Tagging/Filebot for sorting media&#xD;
+</Overview>
+  <Category/>
+  <WebUI/>
+  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/processing.png</Icon>
+  <ExtraParams/>
+  <Description>[b]This container moves and categorizes MP3/MKV/EPUB/PDF-Files from[br]&#xD;
+subfolders $DOWNLOADED to $PROCESSED of /downloads[br][/b]&#xD;
+[br]&#xD;
+These are defined by Environment Variables (defaults should give you an idea):[br]&#xD;
+[br]&#xD;
+[b]$DOWNLOADED[/b][br]&#xD;
+The subfolder of /downloads where your downloads reside[br][br]&#xD;
+[b]$PROCESSED[/b][br]&#xD;
+The subfolder of /downloads to output files when processing[br][br]&#xD;
+[b]$MKVTAG[/b][br]&#xD;
+All MKV's Title/Video/Audio1/Audio2/Audio3-Tags are set to this[br][br]&#xD;
+[b]$LANGUAGE[/b][br]&#xD;
+2-letter language code used for sorting Movies/Shows[br][br]&#xD;
+[b]$MUSIC[/b][br]&#xD;
+The subfolder MP3s are put into[br][br]&#xD;
+[b]$EBOOKS[/b][br]&#xD;
+The subfolder EPUBs are put into[br][br]&#xD;
+[b]$MAGAZINES[/b][br]&#xD;
+The subfolder PDFs are put into[br][br]&#xD;
+[b]$SHOWS[/b][br]&#xD;
+The subfolder MKVs of shows/anime are put into (with quality appended)[br][br]&#xD;
+[b]$HSBS[/b][br]&#xD;
+The subfolder MKVs of 3D movies are put into (with year of release and 3D.H-SBS appended)[br][br]&#xD;
+[b]$MOVIES[/b][br]&#xD;
+The subfolder MKVs of movies are put into (with year of release appended)[br][br]&#xD;
+[b]$DRONE[/b][br]&#xD;
+MKVs in this subfolder of /downloads are Tagged, then Moved to its equivalent in /processing for Sonarr to pick up[br][br]&#xD;
+[br]&#xD;
+The container runs headlessly and stops automatically.[br]&#xD;
+[br]&#xD;
+Use with care! Only let it lose on your Files if you fully understand the consequences![br]&#xD;
+[br]&#xD;
+chmod -R 775 is run on /downloads[br]&#xD;
+[br]&#xD;
+SRT/SUB/IDX/M3U/URL-Files are considered Clutter and will be deleted from /downloads[br]&#xD;
+[br]&#xD;
+This container is based on smdion/docker-nginx/ and uses mkvtoolnix for Tagging/Filebot for sorting media&#xD;
+</Description>
+  <Networking>
     <Mode>bridge</Mode>
-    <Publish>
-    </Publish>
+    <Publish/>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name>MKVTAG</Name>
-      <Value>RiX</Value>
-    </Variable>
-    <Variable>
-      <Name>LANGUAGE</Name>
-      <Value>de</Value>
-    </Variable>
-    <Variable>
-      <Name>DOWNLOADED</Name>
-      <Value>Downloads</Value>
-    </Variable>
-    <Variable>
-      <Name>PROCESSED</Name>
-      <Value>Verarbeitung</Value>
-    </Variable>
-    <Variable>
-      <Name>DRONE</Name>
-      <Value>Drone</Value>
-    </Variable>
-    <Variable>
-      <Name>MUSIC</Name>
-      <Value>Musik</Value>
-    </Variable>
-    <Variable>
-      <Name>EBOOKS</Name>
-      <Value>Ebooks</Value>
-    </Variable>
-    <Variable>
-      <Name>SHOWS</Name>
-      <Value>Serien</Value>
-    </Variable>
-    <Variable>
-      <Name>HSBS</Name>
-      <Value>3D-Filme</Value>
-    </Variable>	
-    <Variable>
-      <Name>MOVIES</Name>
-      <Value>Filme</Value>
-    </Variable>
-    <Variable>
-      <Name>MAGAZINES</Name>
-      <Value>Magazine</Value>
-    </Variable>	
-  </Environment>   
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/processing</HostDir>
@@ -114,11 +102,74 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/processing.png</Icon>
-  <Date>2015-10-28</Date>
-  <Changes>
-	-Initial Release
-	-Fully working (German for now)
-  </Changes>
-</Containers>
+  <Environment>
+    <Variable>
+      <Value>RiX</Value>
+      <Name>MKVTAG</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>de</Value>
+      <Name>LANGUAGE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Downloads</Value>
+      <Name>DOWNLOADED</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Verarbeitung</Value>
+      <Name>PROCESSED</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Drone</Value>
+      <Name>DRONE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Musik</Value>
+      <Name>MUSIC</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Ebooks</Value>
+      <Name>EBOOKS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Serien</Value>
+      <Name>SHOWS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3D-Filme</Value>
+      <Name>HSBS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Filme</Value>
+      <Name>MOVIES</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Magazine</Value>
+      <Name>MAGAZINES</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Path 1" Target="/log" Default="/mnt/cache/appdata/processing" Mode="rw" Description="Container Path: /log" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/processing</Config>
+  <Config Name="Path 2" Target="/downloads" Default="/mnt/user/Downloads" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads</Config>
+  <Config Name="Variable 1" Target="MKVTAG" Default="RiX" Mode="" Description="Container Variable: MKVTAG" Type="Variable" Display="always" Required="false" Mask="false">RiX</Config>
+  <Config Name="Variable 2" Target="LANGUAGE" Default="de" Mode="" Description="Container Variable: LANGUAGE" Type="Variable" Display="always" Required="false" Mask="false">de</Config>
+  <Config Name="Variable 3" Target="DOWNLOADED" Default="Downloads" Mode="" Description="Container Variable: DOWNLOADED" Type="Variable" Display="always" Required="false" Mask="false">Downloads</Config>
+  <Config Name="Variable 4" Target="PROCESSED" Default="Verarbeitung" Mode="" Description="Container Variable: PROCESSED" Type="Variable" Display="always" Required="false" Mask="false">Verarbeitung</Config>
+  <Config Name="Variable 5" Target="DRONE" Default="Drone" Mode="" Description="Container Variable: DRONE" Type="Variable" Display="always" Required="false" Mask="false">Drone</Config>
+  <Config Name="Variable 6" Target="MUSIC" Default="Musik" Mode="" Description="Container Variable: MUSIC" Type="Variable" Display="always" Required="false" Mask="false">Musik</Config>
+  <Config Name="Variable 7" Target="EBOOKS" Default="Ebooks" Mode="" Description="Container Variable: EBOOKS" Type="Variable" Display="always" Required="false" Mask="false">Ebooks</Config>
+  <Config Name="Variable 8" Target="SHOWS" Default="Serien" Mode="" Description="Container Variable: SHOWS" Type="Variable" Display="always" Required="false" Mask="false">Serien</Config>
+  <Config Name="Variable 9" Target="HSBS" Default="3D-Filme" Mode="" Description="Container Variable: HSBS" Type="Variable" Display="always" Required="false" Mask="false">3D-Filme</Config>
+  <Config Name="Variable 10" Target="MOVIES" Default="Filme" Mode="" Description="Container Variable: MOVIES" Type="Variable" Display="always" Required="false" Mask="false">Filme</Config>
+  <Config Name="Variable 11" Target="MAGAZINES" Default="Magazine" Mode="" Description="Container Variable: MAGAZINES" Type="Variable" Display="always" Required="false" Mask="false">Magazine</Config>
+</Container>
