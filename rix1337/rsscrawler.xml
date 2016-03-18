@@ -23,11 +23,6 @@
     <Publish>
     </Publish>
   </Networking>
-    <Environment>
-    <Variable>
-      <Name>LOGLEVEL</Name>
-      <Value>INFO</Value>
-    </Variable>
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/rsscrawler</HostDir>
@@ -40,6 +35,13 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <Environment>
+    <Variable>
+      <Value>INFO</Value>
+      <Name>LOGLEVEL</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/rsscrawler.png</Icon>
   <Date>2016-03-16</Date>
