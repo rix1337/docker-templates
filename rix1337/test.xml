@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>test</Name>
+  <Repository>rix1337/docker-test</Repository>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-test</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
+  <Overview>Test. Don't install
+  </Overview>
+  <Category>Downloaders</Category>
+  <WebUI/>
+  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/test.png</Icon>
+  <ExtraParams/>
+  <Description>&#xD;
+	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs[br]&#xD;
+	Only useful for those looking for very specific, automated Downloads.&#xD;
+  </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/test/crawler</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/test/folderwatch</HostDir>
+      <ContainerDir>/jd2/folderwatch</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>DEBUG</Value>
+      <Name>LOGLEVEL</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/test/crawler" Mode="rw" Description="Container Path: /config" Type="Path" Display="hidden" Required="true" Mask="false">/mnt/user/appdata/test</Config>
+  <Config Name="Path 2" Target="/jd2/folderwatch" Default="/mnt/cache/appdata/test/folderwatch" Mode="rw" Description="Your JDownloader 2's folderwatch subdir" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/jdownloader/jd2/folderwatch</Config>
+  <Config Name="LOGLEVEL" Target="LOGLEVEL" Default="DEBUG" Mode="" Description="Level which program should log messages (eg. CRITICAL, ERROR, WARNING, INFO, DEBUG, NOTSET )" Type="Variable" Display="always" Required="true" Mask="false">INFO</Config>
+</Container>
