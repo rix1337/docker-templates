@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>RSScrawler</Name>
+  <Name>RSScrawler (German Release Scraper)</Name>
   <Repository>rix1337/docker-rsscrawler</Repository>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-rsscrawler</Registry>
   <Network>bridge</Network>
@@ -8,7 +8,7 @@
   <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
   <Overview>&#xD;
 	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs[br]&#xD;
-	Only useful for those looking for very specific, automated Downloads.&#xD;
+	Only useful for German users. Very advanced and user friendly features.&#xD;
   </Overview>
   <Category>Downloaders</Category>
   <WebUI/>
@@ -16,7 +16,7 @@
   <ExtraParams/>
   <Description>&#xD;
 	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs[br]&#xD;
-	Only useful for those looking for very specific, automated Downloads.&#xD;
+	Only useful for German users. Very advanced and user friendly features.&#xD;
   </Description>
   <Networking>
     <Mode>bridge</Mode>
