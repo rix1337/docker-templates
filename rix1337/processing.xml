@@ -6,13 +6,13 @@
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support/>
-  <Overview>[b]This private container moves and categorizes MP3/MKV/EPUB/PDF-Files. Do not use it.[br][/b]&#xD;
+  <Overview>[b]This private container moves and categorizes movies/shows. Do not use it.[br][/b]&#xD;
 </Overview>
   <Category/>
   <WebUI/>
   <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/processing.png</Icon>
   <ExtraParams/>
-  <Description>[b]This private container moves and categorizes MP3/MKV/EPUB/PDF-Files. Do not use it.[br][/b]&#xD;
+  <Description>[b]This private container moves and categorizes movies/shows. Do not use it.[br][/b]&#xD;
 </Description>
   <Networking>
     <Mode>bridge</Mode>
