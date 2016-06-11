@@ -10,7 +10,7 @@
 </Overview>
   <Category/>
   <WebUI/>
-  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/automator.png</Icon>
+  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/private/rix1337/automator.png</Icon>
   <ExtraParams/>
   <Description>[b]This private container moves and categorizes movies/shows. Do not use it.[br][/b]&#xD;
 </Description>
