@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Verarbeitung</Name>
+  <Repository>rix1337/docker-verarbeitung</Repository>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-verarbeitung</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Overview>[b]This German container sorts/tags and deletes movies/shows. Do not use it without completely understanding the source code first.[br][/b]&#xD;
+</Overview>
+  <Category/>
+  <WebUI/>
+  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/verarbeitung.png</Icon>
+  <ExtraParams/>
+  <Description>[b]This private container sorts/tags and deletes movies/shows. Do not use it without completely understanding the source code first.[br][/b]&#xD;
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/verarbeitung</HostDir>
+      <ContainerDir>/log</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Downloads</HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Plex</HostDir>
+      <ContainerDir>/plex</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Config Name="Path 1" Target="/log" Default="/mnt/cache/appdata/verarbeitung" Mode="rw" Description="Container Path: /log" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/verarbeitung</Config>
+  <Config Name="Path 2" Target="/downloads" Default="/mnt/user/Downloads" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads</Config>
+  <Config Name="Path 3" Target="/plex" Default="/mnt/user/Plex" Mode="rw" Description="Container Path: /plex" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Plex</Config>
+  </Container>

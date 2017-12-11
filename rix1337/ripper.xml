@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Ripper</Name>
+  <Category>Backup: MediaApp:Video MediaApp:Music MediaApp:Other Productivity: Tools:</Category>
+  <Date>2017-01-13</Date>
+  <Repository>rix1337/docker-ripper</Repository>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-ripper</Registry>
+  <Network>host</Network>
+  <Privileged>true</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=43669.0</Support>
+  <Overview>This container will detect optical disks by their type and rip them automatically.</Overview>
+  <Category>MediaApp:Video Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/ripper.png</Icon>
+  <ExtraParams>--device=/dev/sr0:/dev/sr0</ExtraParams>
+  <DateInstalled>1484340258</DateInstalled>
+  <Description>This container will detect optical disks by their type and rip them automatically.[BR]&#xD;
+[BR]&#xD;
+-CDs are ripped to MP3/FLAC[BR]&#xD;
+-DVDs and BluRays are ripped to MKV[BR]&#xD;
+-Data Disks are cloned to ISO[BR]&#xD;
+[BR]&#xD;
+[B]To properly detect optical disk types in a docker environment this script relies on makemkvcon output.[/B][BR]&#xD;
+[BR]&#xD;
+MakeMKV is free while in Beta, but requires a valid license key. Ripper tries to fetch the latest free beta key on launch. Without a purchased license key Ripper may stop running at any time.[BR]
+[BR]
+To add your purchased license key to MakeMKV/Ripper add it to the enter-your-key-then-rename-to.settings.conf at app_Key = "[ENTER KEY HERE]" and rename the file to settings.conf.</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/dev/sr0</HostDir>
+      <ContainerDir>/dev/sr0</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Downloads/</HostDir>
+      <ContainerDir>/out</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ripper</HostDir>
+      <ContainerDir>/config/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Config Name="Optical Drive" Target="/dev/sr0" Default="" Mode="rw" Description="Required path of your optical drive" Type="Path" Display="always" Required="false" Mask="false">/dev/sr0</Config>
+  <Config Name="Output Dir" Target="/out" Default="" Mode="rw" Description="Output files are stored here" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/</Config>
+  <Config Name="Config Dir" Target="/config/" Default="/mnt/user/appdata/ripper" Mode="rw" Description="Configuration files are stored here" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/ripper</Config>
+</Container>

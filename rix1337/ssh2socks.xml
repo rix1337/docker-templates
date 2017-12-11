@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Network:Proxy</Category>
+  <Date>2015-12-01</Date>
+  <Changes>
+    -Initial Release
+</Changes>
+  <Name>ssh2socks</Name>
+  <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
+  <Description>
+   ssh2socks passes through a SSH tunnel as a local SOCKS proxy.
+   
+   Switch to Advanced View and set your login info (User, Host, Password)!
+  </Description>
+  <Overview>Passes through an SSH tunnel as a local SOCKS proxy</Overview>
+<Project></Project>
+  <Registry>https://hub.docker.com/r/rix1337/docker-ssh2socks/</Registry>
+  <GitHub>https://github.com/rix1337/docker-ssh2socks</GitHub>
+  <Repository>rix1337/docker-ssh2socks</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>USER</Name>
+      <Value>Your SSH username</Value>
+    </Variable>
+    <Variable>
+      <Name>HOST</Name>
+      <Value>Your SSH host</Value>
+    </Variable>
+    <Variable>
+      <Name>SSHPASS</Name>
+      <Value>Your Password</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+  <Port>
+        <HostPort>10101</HostPort>
+        <ContainerPort>10101</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+   </Publish>
+</Networking>
+  <Data>
+  </Data>
+   <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/ssh2socks.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
