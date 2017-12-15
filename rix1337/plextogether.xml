@@ -6,12 +6,12 @@
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
-  <Support>http://lime-technology.com/forum/index.php?topic=54663.0</Support>
+  <Support>http://lime-technology.com/forum/index.php?topic=43669.0</Support>
   <Overview>[B]What is PlexTogether?[/B][BR]&#xD;
 PlexTogether allows you and your friends/family to watch Plex in sync, wherever you are.[BR]&#xD;
 [BR]&#xD;
 [B]Modified by me to always join your self-hosted server. Just set DOMAIN and don't remove AUTOJOIN![/B][BR]&#xD;
-For this to work you need to pass [B]http://IP:2088/ptweb[/B] and [B]http://IP:2089/ptserver[/B] through to your reverse proxy running at DOMAIN. This works best with the nginx-letsencrypt docker.[BR]&#xD;
+For this to work you need to pass [B]http://IP:2088/ptweb[/B] and [B]http://IP:2089/ptserver[/B] through to your reverse proxy running at DOMAIN (https only!). This works best with the nginx-letsencrypt docker.[BR]&#xD;
 [BR]&#xD;
 [B]How does it work?[/B][BR]&#xD;
 1. Log in to your Plex.tv account[BR]&#xD;
