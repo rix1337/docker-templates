@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Tautulli</Name>
+  <Beta>True</Beta>
   <Repository>rix1337/docker-tautulli</Repository>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-tautulli/</Registry>
   <Network>bridge</Network>
