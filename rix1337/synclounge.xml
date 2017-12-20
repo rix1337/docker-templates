@@ -24,7 +24,7 @@ For this to work you need to pass [B]http://IP:2088/ptweb[/B] and [B]http://IP:2
   <WebUI>http://[IP]:[PORT:8088]/ptweb/</WebUI>
   <TemplateURL/>
   <Icon>http://synclounge.tv/img/logo-small-light.png</Icon>
-  <ExtraParams>--restart unless-stopped --cpuset-cpus=1</ExtraParams>
+  <ExtraParams></ExtraParams>
   <PostArgs/>
   <DateInstalled>1513598895</DateInstalled>
   <Description>[B]What is SyncLounge?[/B][BR]&#xD;
