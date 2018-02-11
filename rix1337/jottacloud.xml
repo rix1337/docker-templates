@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Jottacloud</Name>
+  <Name>Jottalib</Name>
   <Repository>rix1337/docker-jottacloud</Repository>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-jottacloud</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
   <Support>http://lime-technology.com/forum/index.php?topic=43669.0</Support>
-  <Overview>A container to sync files and directories to and from Jottacloud.</Overview>
+  <Overview>A container to sync files from a folder to Jottacloud.</Overview>
   <Category>Backup: Cloud:</Category>
   <WebUI/>
   <TemplateURL/>
