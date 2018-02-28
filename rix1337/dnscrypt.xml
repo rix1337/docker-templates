@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>DNScrypt</Name>
-  <Repository>rix1337/docker-dnscrypt2</Repository>
-  <Registry>https://hub.docker.com/r/rix1337/docker-dnscrypt2/</Registry>
+  <Repository>rix1337/docker-dnscrypt</Repository>
+  <Registry>https://hub.docker.com/r/rix1337/docker-dnscrypt/</Registry>
   <Network>br0</Network>
   <MyIP>192.168.x.x</MyIP>
   <Privileged>false</Privileged>
