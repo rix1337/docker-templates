@@ -7,7 +7,7 @@
   <MyIP/>
   <Privileged>false</Privileged>
   <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
-  <Project/>
+  <Project>https://github.com/rix1337/RSScrawler</Project>
   <Overview>&#xD;
 	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs[br]&#xD;
 	Only useful for German users. Very advanced and user friendly features.&#xD;
