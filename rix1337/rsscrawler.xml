@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>RSScrawler</Name>
   <Repository>rix1337/docker-rsscrawler</Repository>
-  <Registry>https://registry.hub.docker.com/u/rix1337/docker-rsscrawler/</Registry>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-rsscrawler</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
@@ -18,7 +18,7 @@
   <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/rsscrawler.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DateInstalled>1522169769</DateInstalled>
+  <DateInstalled>1522517740</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <DonateImg/>
@@ -39,7 +39,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/RSScrawler</HostDir>
+      <HostDir>/mnt/user/appdata/rsscrawler/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -51,13 +51,23 @@
   </Data>
   <Environment>
     <Variable>
-      <Value/>
+      <Value>INFO</Value>
       <Name>LOGLEVEL</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>false</Value>
       <Name>NO_UPDATES</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>master</Value>
+      <Name>BRANCH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://github.com/rix1337/RSScrawler.git</Value>
+      <Name>REPO</Name>
       <Mode/>
     </Variable>
     <Variable>
@@ -65,23 +75,13 @@
       <Name>PARAMETER</Name>
       <Mode/>
     </Variable>
-    <Variable>
-      <Value/>
-      <Name>BRANCH</Name>
-      <Mode/>
-    </Variable>  
-    <Variable>
-      <Value/>
-      <Name>REPO</Name>
-      <Mode/>
-    </Variable>
   </Environment>
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/cache/appdata/RSScrawler" Mode="rw" Description="Container Path: /config" Type="Path" Display="hidden" Required="true" Mask="false">/mnt/cache/appdata/RSScrawler</Config>
-  <Config Name="JDownloader 2 " Target="/jd2/folderwatch" Default="/mnt/cache/appdata/jdownloader/jd2/folderwatch" Mode="rw" Description="Container Path: /jd2/folderwatch" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/JDownloader2/folderwatch/</Config>
-  <Config Name="Webserver" Target="9090" Default="" Mode="tcp" Description="Container Port: 9090" Type="Port" Display="always" Required="false" Mask="false">9090</Config>
-  <Config Name="LOGLEVEL" Target="LOGLEVEL" Default="INFO" Mode="" Description="options are:&#13;&#10;CRITICAL, ERROR, WARNING, INFO, DEBUG, NOTSET" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
-  <Config Name="NO_UPDATES" Target="NO_UPDATES" Default="false" Mode="" Description="set to " Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
-  <Config Name="PARAMETER" Target="PARAMETER" Default="" Mode="" Description="options are:&#13;&#10;--testlauf&#13;&#10;--ersatzblogs&#13;&#10;&#13;&#10;if you want to use both, write it like this:&#13;&#10;--testlauf --ersatzblogs" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
-  <Config Name="BRANCH" Target="BRANCH" Default="master" Mode="" Description="choose which branch should be used for the RSScrawler script" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
-  <Config Name="REPO" Target="REPO" Default="https://github.com/rix1337/RSScrawler.git" Mode="" Description="choose which repo should be used for the RSScrawler script" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="JDownloader-Path" Target="/jd2/folderwatch" Default="/mnt/cache/appdata/jdownloader/jd2/folderwatch" Mode="rw" Description="Container Path: /jd2/folderwatch" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/jdownloader/folderwatch</Config>
+  <Config Name="LOGLEVEL" Target="LOGLEVEL" Default="INFO" Mode="" Description="INFO/DEBUG/WARNING/ERROR/CRITICAL/NOTSET" Type="Variable" Display="always-hide" Required="false" Mask="false">INFO</Config>
+  <Config Name="Webserver" Target="9090" Default="" Mode="tcp" Description="Container Port: 9090" Type="Port" Display="always-hide" Required="false" Mask="false">1333</Config>
+  <Config Name="Config-Path" Target="/config" Default="/mnt/user/appdata/RSScrawler" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/rsscrawler/</Config>
+  <Config Name="Disable Auto-Updates" Target="NO_UPDATES" Default="false" Mode="" Description="true/false" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
+  <Config Name="Github-Branch" Target="BRANCH" Default="master" Mode="" Description="Container Variable: BRANCH" Type="Variable" Display="advanced-hide" Required="false" Mask="false">master</Config>
+  <Config Name="Github-Repository" Target="REPO" Default="https://github.com/rix1337/RSScrawler.git" Mode="" Description="Container Variable: REPO" Type="Variable" Display="advanced-hide" Required="false" Mask="false">https://github.com/rix1337/RSScrawler.git</Config>
+  <Config Name="Extra Paramters" Target="PARAMETER" Default="" Mode="" Description="--ersatzblogs/--testlauf" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
 </Container>
