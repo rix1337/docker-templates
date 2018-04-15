@@ -7,7 +7,7 @@
   <MyIP>192.168.x.x</MyIP>
   <Privileged>false</Privileged>
   <Support>http://lime-technology.com/forum/index.php?topic=43669.0</Support>
-  <Overview>This container will create a local DNScrypt proxy (great with Pi-Hole!) using dnscrypt.eu-nl. More settings see https://github.com/rix1337/docker-dnscrypt</Overview>
+  <Overview>This container will create a local DNScrypt proxy (great with Pi-Hole!) If you don't have IPv6 enabled, you need to supply a valid dnscrypt-proxy.toml without the listen udp [::1] blocks. More settings see https://github.com/rix1337/docker-dnscrypt</Overview>
   <Category>Network:Other Other:</Category>
   <WebUI/>
   <TemplateURL/>
@@ -20,6 +20,12 @@
     <Mode>br0</Mode>
     <Publish/>
   </Networking>
-  <Data/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/dnscrypt</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Environment/>
 </Container>
