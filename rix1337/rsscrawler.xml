@@ -56,21 +56,6 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value>false</Value>
-      <Name>NO_UPDATES</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>master</Value>
-      <Name>BRANCH</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>https://github.com/rix1337/RSScrawler.git</Value>
-      <Name>REPO</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
       <Value/>
       <Name>PARAMETER</Name>
       <Mode/>
@@ -80,8 +65,5 @@
   <Config Name="LOGLEVEL" Target="LOGLEVEL" Default="INFO" Mode="" Description="INFO/DEBUG/WARNING/ERROR/CRITICAL/NOTSET" Type="Variable" Display="always-hide" Required="false" Mask="false">INFO</Config>
   <Config Name="Webserver" Target="9090" Default="" Mode="tcp" Description="Container Port: 9090" Type="Port" Display="always-hide" Required="false" Mask="false">1333</Config>
   <Config Name="Config-Path" Target="/config" Default="/mnt/user/appdata/RSScrawler" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/rsscrawler/</Config>
-  <Config Name="Disable Auto-Updates" Target="NO_UPDATES" Default="false" Mode="" Description="true/false" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
-  <Config Name="Github-Branch" Target="BRANCH" Default="master" Mode="" Description="Container Variable: BRANCH" Type="Variable" Display="advanced-hide" Required="false" Mask="false">master</Config>
-  <Config Name="Github-Repository" Target="REPO" Default="https://github.com/rix1337/RSScrawler.git" Mode="" Description="Container Variable: REPO" Type="Variable" Display="advanced-hide" Required="false" Mask="false">https://github.com/rix1337/RSScrawler.git</Config>
   <Config Name="Extra Paramters" Target="PARAMETER" Default="" Mode="" Description="--ersatzblogs/--testlauf" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
 </Container>
