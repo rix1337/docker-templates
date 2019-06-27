@@ -48,8 +48,8 @@ JDownloader is expected to be running and connected to my.jdownloader.org - the 
   </Data>
   <Environment>
     <Variable>
-      <Value>--jd-user=&lt;username&gt; --jd-pass=&lt;password&gt; --jd-device=DEVICENAME]</Value>
-      <Name> PARAMETER</Name>
+      <Value>--jd-user=USERNAME --jd-pass=PASSWORD --jd-device=DEVICENAME</Value>
+      <Name>PARAMETER</Name>
       <Mode/>
     </Variable>
   </Environment>
