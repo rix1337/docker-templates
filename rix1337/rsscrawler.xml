@@ -21,8 +21,8 @@
   <PostArgs/>
   <CPUset></CPUset>
   <DateInstalled></DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Sponsor me!</DonateText>
+  <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
   <Description>&#xD;
 	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs[br]&#xD;
 	Only useful for German users. Very advanced and user friendly features.&#xD;
