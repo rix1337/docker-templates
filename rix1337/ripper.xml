@@ -15,6 +15,8 @@
   <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/ripper.png</Icon>
   <ExtraParams>--device=/dev/sr0:/dev/sr0</ExtraParams>
   <DateInstalled>1484340258</DateInstalled>
+  <DonateText>Sponsor me!</DonateText>
+  <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
   <Description>This container will detect optical disks by their type and rip them automatically.[BR]&#xD;
 [BR]&#xD;
 -CDs are ripped to MP3/FLAC[BR]&#xD;
