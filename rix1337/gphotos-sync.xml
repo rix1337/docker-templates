@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>GooglePhotosSync</Name>
+  <Repository>rix1337/docker-gphotos-sync</Repository>
+  <Registry>https://hub.docker.com/r/rix1337/docker-gphotos-sync</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Google Photos Sync downloads your Google Photos to the local file system. It will backup all the photos the user uploaded to Google Photos, but also the album information and additional Google Photos 'Creations' (animations, panoramas, movies, effects and collages).&#xD;
+&#xD;
+How to set this up:&#xD;
+1. Place your client_secret.json at /config&#xD;
+    How to get it is best described at Logix's Article at Linux Uprising&#xD;
+2. Afterwards you need to sign into the application once which cannot be done headlessly (using the "Syncing" command)&#xD;
+3. Afterwards you can call the "Syncing" command any time you wish, as long as the container is running (e.g. by using cron).&#xD;
+&#xD;
+Syncing:&#xD;
+[i]docker exec -it GooglePhotosSync gphotos-sync /storage[/i]&#xD;
+By itself this container will do nothing. A sync will only occur when you call the above command on a running container.&#xD;
+</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/uNmkYOq.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset>3</CPUset>
+  <DateInstalled>1588709802</DateInstalled>
+  <DonateText>Sponsor me!</DonateText>
+  <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
+  <Description>Google Photos Sync downloads your Google Photos to the local file system. It will backup all the photos the user uploaded to Google Photos, but also the album information and additional Google Photos 'Creations' (animations, panoramas, movies, effects and collages).&#xD;
+&#xD;
+How to set this up:&#xD;
+1. Place your client_secret.json at /config&#xD;
+    How to get it is best described at Logix's Article at Linux Uprising&#xD;
+2. Afterwards you need to sign into the application once which cannot be done headlessly (using the "Syncing" command)&#xD;
+3. Afterwards you can call the "Syncing" command any time you wish, as long as the container is running (e.g. by using cron).&#xD;
+&#xD;
+Syncing:&#xD;
+[i]docker exec -it GooglePhotosSync gphotos-sync /storage[/i]&#xD;
+By itself this container will do nothing. A sync will only occur when you call the above command on a running container.&#xD;
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Photos</HostDir>
+      <ContainerDir>/storage</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/gphotos-sync</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/storage" Default="" Mode="rw" Description="Container Path: /storage" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Google Photos</Config>
+  <Config Name="Host Path 2" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/gphotos-sync</Config>
+</Container>
