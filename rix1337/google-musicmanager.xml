@@ -18,8 +18,8 @@
   <PostArgs/>
   <CPUset></CPUset>
   <DateInstalled></DateInstalled>
-  <DonateText/>
-  <DonateLink>false</DonateLink>
+<DonateText>Sponsor me!</DonateText>
+<DonateLink>https://github.com/sponsors/rix1337</DonateLink>
   <Description>Upload your personal music collection to Google Play Music</Description>
   <Networking>
     <Mode>host</Mode>
