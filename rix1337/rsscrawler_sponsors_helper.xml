@@ -42,20 +42,35 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/rsscrawler-helper</HostDir>
+      <HostDir>/mnt/cache/appdata/rsscrawler-sponsors-helper</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
     <Variable>
-      <Value>192.168.1.1:9090</Value>
+      <Value></Value>
       <Name>RSSCRAWLER_URL</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>10987654321cba</Value>
+      <Value></Value>
       <Name>ANTI_CAPTCHA_KEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>SJ_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>SJ_PASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>CUSTOM_HOSTER</Name>
       <Mode/>
     </Variable>
     <Variable>
@@ -100,9 +115,12 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Your local RSScrawler URL (eg. 10.10.0.1:9090)" Target="RSSCRAWLER_URL" Default="" Mode="" Description="Container Variable: RSSCRAWLER_URL" Type="Variable" Display="always" Required="true" Mask="false">192.168.1.1:9090</Config>
-  <Config Name="Your anti-captcha.com key" Target="ANTI_CAPTCHA_KEY" Default="" Mode="" Description="Container Variable: ANTI_CAPTCHA_KEY" Type="Variable" Display="always" Required="true" Mask="false">10987654321cba</Config>
-  <Config Name="Config Directory" Target="/config" Default="/mnt/cache/appdata/rsscrawler-helper" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/rsscrawler-helper</Config>
+  <Config Name="Your local RSScrawler URL (eg. http://10.10.0.1:9090/crawler)" Target="RSSCRAWLER_URL" Default="" Mode="" Description="Container Variable: RSSCRAWLER_URL" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Your anti-captcha.com key" Target="ANTI_CAPTCHA_KEY" Default="" Mode="" Description="Container Variable: ANTI_CAPTCHA_KEY" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SJ_USER" Target="SJ_USER" Default="" Mode="" Description="Container Variable: SJ_USER" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SJ_PASS" Target="SJ_PASS" Default="" Mode="" Description="Container Variable: SJ_PASS" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CUSTOM_HOSTER" Target="CUSTOM_HOSTER" Default="" Mode="" Description="Container Variable: CUSTOM_HOSTER" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/user/appdata/firefox" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/rsscrawler-sponsors-helper</Config>
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
   <Config Name="Umask" Target="UMASK" Default="000" Mode="" Description="Mask that controls how file permissions are set for newly created files. The value of the mask is in octal notation." Type="Variable" Display="advanced" Required="false" Mask="false">000</Config>
