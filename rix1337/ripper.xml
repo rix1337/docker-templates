@@ -50,7 +50,7 @@ To add your purchased license key to MakeMKV/Ripper add it to the enter-your-key
     </Volume>
   </Data>
   <Environment/>
-  <Config Name="Optical Drive" Target="/dev/sr0" Default="" Mode="rw" Description="Required path of your optical drive" Type="Path" Display="always" Required="false" Mask="false">/dev/sr0</Config>
+  <Config Name="Optical Drive" Target="/dev/sr0" Default="" Mode="rw" Description="Required path of your optical drive" Type="Device" Display="always" Required="true" Mask="false">/dev/sr0</Config>
   <Config Name="Output Dir" Target="/out" Default="" Mode="rw" Description="Output files are stored here" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/</Config>
   <Config Name="Config Dir" Target="/config/" Default="/mnt/user/appdata/ripper" Mode="rw" Description="Configuration files are stored here" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/ripper</Config>
 </Container>
