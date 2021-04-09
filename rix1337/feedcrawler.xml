@@ -1,22 +1,23 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>RSScrawler</Name>
-  <Repository>rix1337/docker-rsscrawler</Repository>
-  <Registry>https://registry.hub.docker.com/u/rix1337/docker-rsscrawler</Registry>
+  <Name>FeedCrawler</Name>
+  <Repository>rix1337/docker-feedcrawler</Repository>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-feedcrawler</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
-  <Project>https://github.com/rix1337/RSScrawler</Project>
+  <Project>https://github.com/rix1337/FeedCrawler</Project>
   <Overview>&#xD;
-	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs[br]&#xD;
+	This python-based script automates downloads for JDownloader crawling web feeds.[br]&#xD;
+	After the first launch you need to provide correct hostnames in FeedCrawler.ini at /config.[br]&#xD;
 	Only useful for German users. Very advanced and user friendly features.&#xD;
   </Overview>
   <Category>Downloaders</Category>
-  <WebUI>http://[IP]:[PORT:9090]/rsscrawler</WebUI>
+  <WebUI>http://[IP]:[PORT:9090]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/rsscrawler.png</Icon>
+  <Icon>https://raw.githubusercontent.com/rix1337/FeedCrawler/master/feedcrawler/web/img/favicon.ico</Icon>
   <ExtraParams>--log-opt max-size=50m</ExtraParams>
   <PostArgs/>
   <CPUset></CPUset>
@@ -24,7 +25,8 @@
   <DonateText>Sponsor me!</DonateText>
   <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
   <Description>&#xD;
-	This python-based script crawls pre-defined RSS feeds and outputs JD2-crawljobs[br]&#xD;
+	This python-based script automates downloads for JDownloader crawling web feeds.[br]&#xD;
+	After the first launch you need to provide correct hostnames in FeedCrawler.ini at /config.[br]&#xD;
 	Only useful for German users. Very advanced and user friendly features.&#xD;
   </Description>
   <Networking>
@@ -39,7 +41,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/rsscrawler/</HostDir>
+      <HostDir>/mnt/cache/appdata/feedcrawler/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -65,12 +67,18 @@
       <Name>DEVICE</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>VERSION</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="LOGLEVEL" Target="LOGLEVEL" Default="INFO" Mode="" Description="INFO/DEBUG/WARNING/ERROR/CRITICAL/NOTSET" Type="Variable" Display="always-hide" Required="false" Mask="false">INFO</Config>
-  <Config Name="Webserver" Target="9090" Default="" Mode="tcp" Description="Container Port: 9090" Type="Port" Display="always-hide" Required="false" Mask="false">9090</Config>
-  <Config Name="Config-Path" Target="/config" Default="/mnt/user/appdata/RSScrawler" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/rsscrawler/</Config>
+  <Config Name="Webserver" Target="9090" Default="" Mode="tcp" Description="Container Port: 9090" Type="Port" Display="always-hide" Required="true" Mask="false">9090</Config>
+  <Config Name="Config-Path" Target="/config" Default="/mnt/user/appdata/feedcrawler" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/feedcrawler/</Config>
   <Config Name="MyJDownloader Username" Target="USER" Default="" Mode="" Description="Container Variable: USER" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MyJDownloader Password" Target="PASS" Default="" Mode="" Description="Container Variable: PASS" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MyJDownloader Device" Target="DEVICE" Default="" Mode="" Description="Container Variable: DEVICE" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="FeedCrawler Version" Target="DEVICE" Default="" Mode="" Description="Optional Version override" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
