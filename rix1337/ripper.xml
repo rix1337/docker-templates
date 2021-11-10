@@ -3,9 +3,9 @@
   <Name>Ripper</Name>
   <Category>Backup: MediaApp:Video MediaApp:Music MediaApp:Other Productivity: Tools:</Category>
   <Date>2017-01-13</Date>
-  <Repository>rix1337/docker-ripper</Repository>
+  <Repository>rix1337/docker-ripper:manual-latest</Repository>
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-ripper</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <Privileged>true</Privileged>
   <Support>http://lime-technology.com/forum/index.php?topic=43669.0</Support>
   <Overview>This container will detect optical disks by their type and rip them automatically.</Overview>
@@ -29,15 +29,16 @@ MakeMKV is free while in Beta, but requires a valid license key. Ripper tries to
 [BR]
 To add your purchased license key to MakeMKV/Ripper add it to the enter-your-key-then-rename-to.settings.conf at app_Key = "[ENTER KEY HERE]" and rename the file to settings.conf.</Description>
   <Networking>
-    <Mode>host</Mode>
-    <Publish/>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9090</HostPort>
+        <ContainerPort>9090</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data>
-    <Volume>
-      <HostDir>/dev/sr0</HostDir>
-      <ContainerDir>/dev/sr0</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
     <Volume>
       <HostDir>/mnt/user/Downloads/</HostDir>
       <ContainerDir>/out</ContainerDir>
@@ -49,8 +50,27 @@ To add your purchased license key to MakeMKV/Ripper add it to the enter-your-key
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment/>
-  <Config Name="Optical Drive" Target="/dev/sr0" Default="" Mode="rw" Description="Required path of your optical drive" Type="Device" Display="always" Required="true" Mask="false">/dev/sr0</Config>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>OPTIONAL_WEB_UI_PATH_PREFIX</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>OPTIONAL_WEB_UI_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>OPTIONAL_WEB_UI_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Config Name="Output Dir" Target="/out" Default="" Mode="rw" Description="Output files are stored here" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/</Config>
   <Config Name="Config Dir" Target="/config/" Default="/mnt/user/appdata/ripper" Mode="rw" Description="Configuration files are stored here" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/ripper</Config>
+  <Config Name="Webserver" Target="9090" Default="" Mode="tcp" Description="Web UI Port to view the Ripper log: 9090" Type="Port" Display="always-hide" Required="true" Mask="false">9090</Config>
+  <Config Name="Web Path Prefix" Target="OPTIONAL_WEB_UI_PATH_PREFIX" Default="" Mode="" Description="Optional: can be used to set a path prefix (e.g. /ripper-ui). This is useful when you are running multiple services at one domain." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Web UI Username" Target="OPTIONAL_WEB_UI_USERNAME " Default="" Mode="" Description="Optional: Requires OPTIONAL_WEB_UI_PASSWORD, enables http-Auth in Web UI" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Web UI Password" Target="OPTIONAL_WEB_UI_PASSWORD " Default="" Mode="" Description="Optional: Requires OPTIONAL_WEB_UI_USERNAME, enables http-Auth in Web UI" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
