@@ -48,11 +48,6 @@
   </Data>
   <Environment>
     <Variable>
-      <Value>INFO</Value>
-      <Name>LOGLEVEL</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
       <Value/>
       <Name>USER</Name>
       <Mode/>
@@ -67,18 +62,11 @@
       <Name>DEVICE</Name>
       <Mode/>
     </Variable>
-    <Variable>
-      <Value/>
-      <Name>VERSION</Name>
-      <Mode/>
-    </Variable>
   </Environment>
   <Labels/>
-  <Config Name="LOGLEVEL" Target="LOGLEVEL" Default="INFO" Mode="" Description="INFO/DEBUG/WARNING/ERROR/CRITICAL/NOTSET" Type="Variable" Display="always-hide" Required="false" Mask="false">INFO</Config>
   <Config Name="Webserver" Target="9090" Default="" Mode="tcp" Description="Container Port: 9090" Type="Port" Display="always-hide" Required="true" Mask="false">9090</Config>
   <Config Name="Config-Path" Target="/config" Default="/mnt/user/appdata/feedcrawler" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/feedcrawler/</Config>
   <Config Name="MyJDownloader Username" Target="USER" Default="" Mode="" Description="Container Variable: USER" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MyJDownloader Password" Target="PASS" Default="" Mode="" Description="Container Variable: PASS" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MyJDownloader Device" Target="DEVICE" Default="" Mode="" Description="Container Variable: DEVICE" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="FeedCrawler Version" Target="DEVICE" Default="" Mode="" Description="Optional Version override" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
