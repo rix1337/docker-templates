@@ -9,7 +9,6 @@
   <Privileged>true</Privileged>
   <Support>http://lime-technology.com/forum/index.php?topic=43669.0</Support>
   <Overview>This container will detect optical disks by their type and rip them automatically.</Overview>
-  <Category>MediaApp:Video Tools:</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/ripper.png</Icon>
