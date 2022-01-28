@@ -27,7 +27,6 @@ By itself this container will do nothing. A sync will only occur when you call t
   <Icon>https://i.imgur.com/uNmkYOq.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset>3</CPUset>
   <DateInstalled>1588709802</DateInstalled>
   <DonateText>Sponsor me!</DonateText>
   <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
