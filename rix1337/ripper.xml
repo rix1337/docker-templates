@@ -16,6 +16,7 @@
   <DateInstalled>1484340258</DateInstalled>
   <DonateText>Sponsor me!</DonateText>
   <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
+  <ReadMe>https://github.com/rix1337/docker-ripper#readme</ReadMe>
   <Description>This container will detect optical disks by their type and rip them automatically.[BR]&#xD;
 [BR]&#xD;
 -CDs are ripped to MP3/FLAC[BR]&#xD;
