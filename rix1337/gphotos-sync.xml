@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://github.com/rix1337/docker-gphotos-sync/issues/new</Support>
   <Project/>
   <Overview>Google Photos Sync downloads your Google Photos to the local file system. It will backup all the photos the user uploaded to Google Photos, but also the album information and additional Google Photos 'Creations' (animations, panoramas, movies, effects and collages).&#xD;
 &#xD;
@@ -27,7 +27,7 @@ By itself this container will do nothing. A sync will only occur when you call t
   <Icon>https://i.imgur.com/uNmkYOq.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DateInstalled>1588709802</DateInstalled>
+  <DateInstalled></DateInstalled>
   <DonateText>Sponsor me!</DonateText>
   <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
   <Description>Google Photos Sync downloads your Google Photos to the local file system. It will backup all the photos the user uploaded to Google Photos, but also the album information and additional Google Photos 'Creations' (animations, panoramas, movies, effects and collages).&#xD;

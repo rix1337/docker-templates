@@ -7,7 +7,7 @@
   <Registry>https://registry.hub.docker.com/u/rix1337/docker-ripper</Registry>
   <Network>bridge</Network>
   <Privileged>true</Privileged>
-  <Support>http://lime-technology.com/forum/index.php?topic=43669.0</Support>
+  <Support>https://github.com/rix1337/docker-ripper#do-you-offer-support</Support>
   <Overview>This container will detect optical disks by their type and rip them automatically.</Overview>
   <WebUI/>
   <TemplateURL/>
@@ -27,7 +27,11 @@
 [BR]&#xD;
 MakeMKV is free while in Beta, but requires a valid license key. Ripper tries to fetch the latest free beta key on launch. Without a purchased license key Ripper may stop running at any time.[BR]
 [BR]
-To add your purchased license key to MakeMKV/Ripper add it to the enter-your-key-then-rename-to.settings.conf at app_Key = "[ENTER KEY HERE]" and rename the file to settings.conf.</Description>
+To add your purchased license key to MakeMKV/Ripper add it to the enter-your-key-then-rename-to.settings.conf at app_Key = "[ENTER KEY HERE]" and rename the file to settings.conf.
+[BR]
+Running multiple instances of Ripper on the same machine is not recommended, but required to rip multiple drives at the same time.[BR]
+You need to disable "privileged mode" to isolate each drive into separate containers.
+  </Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>

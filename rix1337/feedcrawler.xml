@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://lime-technology.com/forum/index.php?topic=43669.0</Support>
+  <Support>https://github.com/rix1337/FeedCrawler/issues/new</Support>
   <Project>https://github.com/rix1337/FeedCrawler</Project>
   <Overview>&#xD;
 	This python-based script automates downloads for JDownloader crawling web feeds.[br]&#xD;
