@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/rix1337/docker-myjd-api/issues/new</Support>
   <Project/>
-  <Overview>This is a standalone version of RSScrawler's MyJDownloader API for use with projects like Organizr.&#xD;
+  <Overview>This is a standalone version of FeedCrawler's MyJDownloader API for use with projects like Organizr.&#xD;
 &#xD;
 --jd-device is optional if only one device is present&#xD;
 &#xD;
