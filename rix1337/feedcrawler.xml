@@ -17,7 +17,7 @@
   <Category>Downloaders</Category>
   <WebUI>http://[IP]:[PORT:9090]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/rix1337/FeedCrawler/master/feedcrawler/web_interface/vuejs_frontend/public/favicon.ico</Icon>
+  <Icon>https://raw.githubusercontent.com/rix1337/FeedCrawler/main/feedcrawler/web_interface/vuejs_frontend/public/favicon.ico</Icon>
   <ExtraParams>--log-opt max-size=50m</ExtraParams>
   <PostArgs/>
   <CPUset></CPUset>

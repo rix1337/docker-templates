@@ -17,7 +17,7 @@ JDownloader is expected to be running and connected to my.jdownloader.org - the 
   <Category/>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/myjd-api.png</Icon>
+  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/main/rix1337/myjd-api.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

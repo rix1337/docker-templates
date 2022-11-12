@@ -11,7 +11,7 @@
   <Overview>This container will detect optical disks by their type and rip them automatically.</Overview>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/master/rix1337/ripper.png</Icon>
+  <Icon>https://raw.githubusercontent.com/rix1337/docker-templates/main/rix1337/ripper.png</Icon>
   <ExtraParams>--device=/dev/sr0:/dev/sr0</ExtraParams>
   <DateInstalled>1484340258</DateInstalled>
   <DonateText>Sponsor me!</DonateText>
