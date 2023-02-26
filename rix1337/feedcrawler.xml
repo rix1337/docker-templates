@@ -17,7 +17,7 @@
   <Category>Downloaders</Category>
   <WebUI>http://[IP]:[PORT:9090]/</WebUI>
   <TemplateURL/>
-  <Icon>https://imgur.com/tEi4qtb.png</Icon>
+  <Icon>https://i.imgur.com/Km1cH7z.png</Icon>
   <ExtraParams>--log-opt max-size=50m</ExtraParams>
   <PostArgs/>
   <CPUset></CPUset>
