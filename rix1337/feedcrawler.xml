@@ -69,4 +69,6 @@
   <Config Name="MyJDownloader Username" Target="USER" Default="" Mode="" Description="Container Variable: USER" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MyJDownloader Password" Target="PASS" Default="" Mode="" Description="Container Variable: PASS" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MyJDownloader Device" Target="DEVICE" Default="" Mode="" Description="Container Variable: DEVICE" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Delay first feed search after launch in Seconds" Target="DELAY" Default="" Mode="" Description="Container Variable: DELAY" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="Log Level" Target="LOGLEVEL" Default="" Mode="" Description="Container Variable: LOGLEVEL" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
