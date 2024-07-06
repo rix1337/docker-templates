@@ -49,26 +49,18 @@
   <Environment>
     <Variable>
       <Value/>
-      <Name>USER</Name>
+      <Name>DELAY</Name>
       <Mode/>
     </Variable>
     <Variable>
       <Value/>
-      <Name>PASS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>DEVICE</Name>
+      <Name>LOGLEVEL</Name>
       <Mode/>
     </Variable>
   </Environment>
   <Labels/>
   <Config Name="Webserver" Target="9090" Default="" Mode="tcp" Description="Container Port: 9090" Type="Port" Display="always-hide" Required="true" Mask="false">9090</Config>
   <Config Name="Config-Path" Target="/config" Default="/mnt/user/appdata/feedcrawler" Mode="rw" Description="Container Path: /config" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/feedcrawler/</Config>
-  <Config Name="MyJDownloader Username" Target="USER" Default="" Mode="" Description="Container Variable: USER" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="MyJDownloader Password" Target="PASS" Default="" Mode="" Description="Container Variable: PASS" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="MyJDownloader Device" Target="DEVICE" Default="" Mode="" Description="Container Variable: DEVICE" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Delay first feed search after launch in Seconds" Target="DELAY" Default="" Mode="" Description="Container Variable: DELAY" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
   <Config Name="Log Level" Target="LOGLEVEL" Default="" Mode="" Description="Container Variable: LOGLEVEL" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
