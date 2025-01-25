@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Quasarr</Name>
+  <Repository>rix1337/docker-quasarr:latest</Repository>
+  <Registry>https://registry.hub.docker.com/u/rix1337/docker-quasarr</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/rix1337/Quasarr/issues</Support>
+  <Project>https://github.com/rix1337/Quasarr/</Project>
+  <Overview>Quasarr connects JDownloader with Radarr and Sonarr. It also decrypts links protected by CAPTCHAs.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/65nHUKs.png</Icon>
+  <ExtraParams>--log-opt max-size=50m</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText>Sponsor me!</DonateText>
+  <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
+  <Requires/>
+  <ReadMe>https://github.com/rix1337/Quasarr#readme</ReadMe>
+  <Config Name="WEB UI for solching CAPTCHAs manually" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Required! Must include Protocol/Port and be reachable to Radarr/Sonarr" Target="INTERNAL_ADDRESS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://192.168.1.1:8080</Config>
+  <Config Name="Set a valid discord webhook URL here" Target="DISCORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="Used by discord notifications to link to your reverse proxy" Target="EXTERNAL_ADDRESS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Config folder" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/quasarr</Config>
+  <Config Name="Set to public plain text document (e.g. found on pastebin) that contains valid hostnames for Quasarr." Target="HOSTNAMES" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>

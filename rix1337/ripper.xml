@@ -17,60 +17,6 @@
   <DonateText>Sponsor me!</DonateText>
   <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
   <ReadMe>https://github.com/rix1337/docker-ripper#readme</ReadMe>
-  <Description>This container will detect optical disks by their type and rip them automatically.[BR]&#xD;
-[BR]&#xD;
--CDs are ripped to MP3/FLAC[BR]&#xD;
--DVDs and BluRays are ripped to MKV[BR]&#xD;
--Data Disks are cloned to ISO[BR]&#xD;
-[BR]&#xD;
-[B]To properly detect optical disk types in a docker environment this script relies on makemkvcon output.[/B][BR]&#xD;
-[BR]&#xD;
-MakeMKV is free while in Beta, but requires a valid license key. Ripper tries to fetch the latest free beta key on launch. Without a purchased license key Ripper may stop running at any time.[BR]
-[BR]
-To add your purchased license key to MakeMKV/Ripper add it to the enter-your-key-then-rename-to.settings.conf at app_Key = "[ENTER KEY HERE]" and rename the file to settings.conf.
-[BR]
-Running multiple instances of Ripper on the same machine is not recommended, but required to rip multiple drives at the same time.[BR]
-You need to disable "privileged mode" to isolate each drive into separate containers.
-  </Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>9090</HostPort>
-        <ContainerPort>9090</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/Downloads/</HostDir>
-      <ContainerDir>/out</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/ripper</HostDir>
-      <ContainerDir>/config/</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value/>
-      <Name>OPTIONAL_WEB_UI_PATH_PREFIX</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>OPTIONAL_WEB_UI_USERNAME</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>OPTIONAL_WEB_UI_PASSWORD</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
   <Config Name="Output Dir" Target="/out" Default="" Mode="rw" Description="Output files are stored here" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Downloads/</Config>
   <Config Name="Config Dir" Target="/config/" Default="/mnt/user/appdata/ripper" Mode="rw" Description="Configuration files are stored here" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/ripper</Config>
   <Config Name="Webserver" Target="9090" Default="" Mode="tcp" Description="Web UI Port to view the Ripper log: 9090" Type="Port" Display="always-hide" Required="true" Mask="false">9090</Config>
