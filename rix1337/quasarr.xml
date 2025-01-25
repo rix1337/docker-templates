@@ -10,7 +10,7 @@
   <Support>https://github.com/rix1337/Quasarr/issues</Support>
   <Project>https://github.com/rix1337/Quasarr/</Project>
   <Overview>Quasarr connects JDownloader with Radarr and Sonarr. It also decrypts links protected by CAPTCHAs.</Overview>
-  <Category/>
+  <Category>Downloaders</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
   <Icon>https://i.imgur.com/65nHUKs.png</Icon>
