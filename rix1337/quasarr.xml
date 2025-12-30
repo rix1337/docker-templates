@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Quasarr</Name>
-  <Repository>rix1337/docker-quasarr:latest</Repository>
-  <Registry>https://registry.hub.docker.com/u/rix1337/docker-quasarr</Registry>
+  <Repository>ghcr.io/rix1337/quasarr:latest</Repository>
+  <Registry>https://ghcr.io/rix1337/quasarr</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/rix1337/Quasarr/issues</Support>
   <Project>https://github.com/rix1337/Quasarr/</Project>
-  <Overview>Quasarr connects JDownloader with Radarr and Sonarr. It also decrypts links protected by CAPTCHAs.</Overview>
+  <Overview>Quasarr connects JDownloader with Radarr, Sonarr and LazyLibrarian. It also decrypts links protected by CAPTCHAs.</Overview>
   <Category>Downloaders</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
@@ -20,12 +20,15 @@
   <DateInstalled/>
   <DonateText>Sponsor me!</DonateText>
   <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
-  <Requires/>
+  <Requires>FlareSolverr 3, JDownloader 2 with My JDownloader</Requires>
   <ReadMe>https://github.com/rix1337/Quasarr#readme</ReadMe>
-  <Config Name="WEB UI for solching CAPTCHAs manually" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
-  <Config Name="Required! Must include Protocol/Port and be reachable to Radarr/Sonarr" Target="INTERNAL_ADDRESS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://192.168.1.1:8080</Config>
-  <Config Name="Set a valid discord webhook URL here" Target="DISCORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"/>
-  <Config Name="Used by discord notifications to link to your reverse proxy" Target="EXTERNAL_ADDRESS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Config folder" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/quasarr</Config>
-  <Config Name="Set to public plain text document (e.g. found on pastebin) that contains valid hostnames for Quasarr." Target="HOSTNAMES" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Web UI for solving CAPTCHAs manually" Target="8080" Default="8080" Mode="tcp" Description="Port for web UI and API access" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Config folder" Target="/config" Default="/mnt/user/appdata/quasarr" Mode="rw" Description="Persistent configuration storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/quasarr</Config>
+  <Config Name="Internal Address" Target="INTERNAL_ADDRESS" Default="http://192.168.1.1:8080" Mode="" Description="Required! Must include protocol and port. Must be reachable by Radarr/Sonarr/LazyLibrarian." Type="Variable" Display="always" Required="true" Mask="false">http://192.168.1.1:8080</Config>
+  <Config Name="External Address" Target="EXTERNAL_ADDRESS" Default="" Mode="" Description="Optional. Used for reverse proxy setup. Always protect external access with basic auth!" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Discord Webhook" Target="DISCORD" Default="" Mode="" Description="Optional. Set a valid Discord webhook URL for notifications." Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="Hostnames URL" Target="HOSTNAMES" Default="" Mode="" Description="Optional. Public plain text URL (e.g. Pastebin raw link) containing valid hostnames for Quasarr." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Silent Mode" Target="SILENT" Default="" Mode="" Description="Optional. Set to True to silence all Discord notifications except SponsorsHelper errors." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Debug Mode" Target="DEBUG" Default="" Mode="" Description="Optional. Set to True to enable debug logging." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional. Set your timezone. Wrong timezone can cause HTTPS/SSL issues." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
