@@ -9,7 +9,17 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/rix1337/Quasarr/issues</Support>
   <Project>https://github.com/rix1337/Quasarr/</Project>
-  <Overview>Quasarr connects JDownloader with Radarr, Sonarr and LazyLibrarian. It also decrypts links protected by CAPTCHAs.</Overview>
+  <Overview>🌟 Quasarr connects JDownloader with Radarr, Sonarr, and LazyLibrarian. It pretends to be both a Newznab Indexer and SABnzbd client - do not use it with real usenet indexers!&#xD;
+&#xD;
+🔓 Includes built-in CAPTCHA decryption for protected links. Solve them manually via the Web UI, or let SponsorsHelper handle it automatically.&#xD;
+&#xD;
+⚡ SponsorsHelper: Active monthly GitHub sponsors get access to a companion Docker image that automatically solves CAPTCHAs and decrypts links - no manual intervention needed! Learn more: [a href="https://github.com/rix1337/Quasarr?tab=readme-ov-file#sponsorshelper"]SponsorsHelper Documentation[/a]&#xD;
+&#xD;
+📋 Hostnames Required: Quasarr needs at least one valid hostname to start.&#xD;
+🔗 [a href="https://quasarr-hostnames.pages.dev"]quasarr-hostnames.pages.dev[/a] — third-party guide for finding hostnames&#xD;
+📋 Alternatively, browse community suggestions via [a href="https://pastebin.com/search?q=hostnames+quasarr"]pastebin search[/a] (login required)&#xD;
+&#xD;
+🔧 Requirements: FlareSolverr 3, JDownloader 2 with My JDownloader account.</Overview>
   <Category>Downloaders</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
@@ -22,13 +32,13 @@
   <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
   <Requires>FlareSolverr 3, JDownloader 2 with My JDownloader</Requires>
   <ReadMe>https://github.com/rix1337/Quasarr#readme</ReadMe>
-  <Config Name="Web UI for solving CAPTCHAs manually" Target="8080" Default="8080" Mode="tcp" Description="Port for web UI and API access" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Config folder" Target="/config" Default="/mnt/user/appdata/quasarr" Mode="rw" Description="Persistent configuration storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/quasarr</Config>
-  <Config Name="Internal Address" Target="INTERNAL_ADDRESS" Default="http://192.168.1.1:8080" Mode="" Description="Required! Must include protocol and port. Must be reachable by Radarr/Sonarr/LazyLibrarian." Type="Variable" Display="always" Required="true" Mask="false">http://192.168.1.1:8080</Config>
-  <Config Name="External Address" Target="EXTERNAL_ADDRESS" Default="" Mode="" Description="Optional. Used for reverse proxy setup. Always protect external access with basic auth!" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Discord Webhook" Target="DISCORD" Default="" Mode="" Description="Optional. Set a valid Discord webhook URL for notifications." Type="Variable" Display="always" Required="false" Mask="true"/>
-  <Config Name="Hostnames URL" Target="HOSTNAMES" Default="" Mode="" Description="Optional. Public plain text URL (e.g. Pastebin raw link) containing valid hostnames for Quasarr." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Web UI for solving CAPTCHAs manually" Target="8080" Default="8080" Mode="tcp" Description="Port for web UI and API access. Use this to manually solve CAPTCHAs if not using SponsorsHelper." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Config folder" Target="/config" Default="/mnt/user/appdata/quasarr" Mode="rw" Description="Persistent configuration storage for Quasarr settings and state." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/quasarr</Config>
+  <Config Name="Internal Address" Target="INTERNAL_ADDRESS" Default="http://192.168.1.1:8080" Mode="" Description="Required! Full URL including protocol and port (e.g., http://192.168.1.1:8080). Must be reachable by Radarr/Sonarr/LazyLibrarian on your network." Type="Variable" Display="always" Required="true" Mask="false">http://192.168.1.1:8080</Config>
+  <Config Name="External Address" Target="EXTERNAL_ADDRESS" Default="" Mode="" Description="Optional. For reverse proxy setups only. Always protect external access with basic auth!" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Discord Webhook" Target="DISCORD" Default="" Mode="" Description="Optional. Discord webhook URL for notifications about CAPTCHA links and download status." Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="Hostnames URL" Target="HOSTNAMES" Default="" Mode="" Description="Optional. Public raw text URL containing valid hostnames (one per line as 'key = value'). Visit quasarr-hostnames.pages.dev for a guide, or search pastebin.com for 'hostnames quasarr'. Must be HTTP/HTTPS raw text, not HTML or JSON." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Silent Mode" Target="SILENT" Default="" Mode="" Description="Optional. Set to True to silence all Discord notifications except SponsorsHelper errors." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Debug Mode" Target="DEBUG" Default="" Mode="" Description="Optional. Set to True to enable debug logging." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional. Set your timezone. Wrong timezone can cause HTTPS/SSL issues." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Debug Mode" Target="DEBUG" Default="" Mode="" Description="Optional. Set to True to enable verbose debug logging for troubleshooting." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional. Your timezone (e.g., America/New_York). Incorrect timezone can cause HTTPS/SSL certificate validation issues." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
