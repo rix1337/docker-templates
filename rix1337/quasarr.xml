@@ -19,7 +19,7 @@
 🔗 [a href="https://quasarr-hostnames.pages.dev"]quasarr-hostnames.pages.dev[/a] — third-party guide for finding hostnames&#xD;
 📋 Alternatively, browse community suggestions via [a href="https://pastebin.com/search?q=hostnames+quasarr"]pastebin search[/a] (login required)&#xD;
 &#xD;
-🔧 Requirements: FlareSolverr 3, JDownloader 2 with My JDownloader account.</Overview>
+🔧 Requirements: JDownloader 2 with My JDownloader account.</Overview>
   <Category>Downloaders</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
@@ -30,7 +30,7 @@
   <DateInstalled/>
   <DonateText>Sponsor me!</DonateText>
   <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
-  <Requires>FlareSolverr 3, JDownloader 2 with My JDownloader</Requires>
+  <Requires>JDownloader 2 with My JDownloader</Requires>
   <ReadMe>https://github.com/rix1337/Quasarr#readme</ReadMe>
   <Config Name="Web UI for solving CAPTCHAs manually" Target="8080" Default="8080" Mode="tcp" Description="Port for web UI and API access. Use this to manually solve CAPTCHAs if not using SponsorsHelper." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Config folder" Target="/config" Default="/mnt/user/appdata/quasarr" Mode="rw" Description="Persistent configuration storage for Quasarr settings and state." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/quasarr</Config>
