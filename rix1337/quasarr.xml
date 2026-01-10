@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="2">
+<Container version="3">
   <Name>Quasarr</Name>
   <Repository>ghcr.io/rix1337/quasarr:latest</Repository>
   <Registry>https://ghcr.io/rix1337/quasarr</Registry>
@@ -16,8 +16,8 @@
 ⚡ SponsorsHelper: Active monthly GitHub sponsors get access to a companion Docker image that automatically solves CAPTCHAs and decrypts links - no manual intervention needed! Learn more: [a href="https://github.com/rix1337/Quasarr?tab=readme-ov-file#sponsorshelper"]SponsorsHelper Documentation[/a]&#xD;
 &#xD;
 📋 Hostnames Required: Quasarr needs at least one valid hostname to start.&#xD;
-🔗 [a href="https://quasarr-hostnames.pages.dev"]quasarr-hostnames.pages.dev[/a] — third-party guide for finding hostnames&#xD;
-📋 Alternatively, browse community suggestions via [a href="https://pastebin.com/search?q=hostnames+quasarr"]pastebin search[/a] (login required)&#xD;
+🔗 [a href="https://quasarr-hostnames.pages.dev"]https://quasarr-hostnames.pages.dev[/a] — third-party guide for finding hostnames&#xD;
+📋 Alternatively, browse community suggestions via [a href="https://pastebin.com/search?q=hostnames+quasarr"]https://pastebin.com search[/a] (login required)&#xD;
 &#xD;
 🔧 Requirements: JDownloader 2 with My JDownloader account.</Overview>
   <Category>Downloaders</Category>
