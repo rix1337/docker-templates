@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="3">
+<Container version="2">
   <Name>Quasarr</Name>
   <Repository>ghcr.io/rix1337/quasarr:latest</Repository>
   <Registry>https://ghcr.io/rix1337/quasarr</Registry>
@@ -13,11 +13,11 @@
 &#xD;
 🔓 Includes built-in CAPTCHA decryption for protected links. Solve them manually via the Web UI, or let SponsorsHelper handle it automatically.&#xD;
 &#xD;
-⚡ SponsorsHelper: Active monthly GitHub sponsors get access to a companion Docker image that automatically solves CAPTCHAs and decrypts links - no manual intervention needed! Learn more: [a href="https://github.com/rix1337/Quasarr?tab=readme-ov-file#sponsorshelper"]SponsorsHelper Documentation[/a]&#xD;
+⚡ SponsorsHelper: Active monthly GitHub sponsors get access to a companion Docker image that automatically solves CAPTCHAs and decrypts links - no manual intervention needed! Learn more: https://github.com/rix1337/Quasarr?tab=readme-ov-file#sponsorshelper&#xD;
 &#xD;
 📋 Hostnames Required: Quasarr needs at least one valid hostname to start.&#xD;
-🔗 [a href="https://quasarr-hostnames.pages.dev"]https://quasarr-hostnames.pages.dev[/a] — third-party guide for finding hostnames&#xD;
-📋 Alternatively, browse community suggestions via [a href="https://pastebin.com/search?q=hostnames+quasarr"]https://pastebin.com search[/a] (login required)&#xD;
+🔗 Community ressource for hostnames: https://quasarr-host.name&#xD;
+📋 Alternatively, search for community suggestions: https://pastebin.com/search?q=hostnames+quasarr (login required)&#xD;
 &#xD;
 🔧 Requirements: JDownloader 2 with My JDownloader account.</Overview>
   <Category>Downloaders</Category>
@@ -27,7 +27,6 @@
   <ExtraParams>--log-opt max-size=50m</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled/>
   <DonateText>Sponsor me!</DonateText>
   <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
   <Requires>JDownloader 2 with My JDownloader</Requires>
@@ -37,7 +36,7 @@
   <Config Name="Internal Address" Target="INTERNAL_ADDRESS" Default="http://192.168.1.1:8080" Mode="" Description="Required! Full URL including protocol and port (e.g., http://192.168.1.1:8080). Must be reachable by Radarr/Sonarr/LazyLibrarian on your network." Type="Variable" Display="always" Required="true" Mask="false">http://192.168.1.1:8080</Config>
   <Config Name="External Address" Target="EXTERNAL_ADDRESS" Default="" Mode="" Description="Optional. For reverse proxy setups only. Always protect external access with basic auth!" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Discord Webhook" Target="DISCORD" Default="" Mode="" Description="Optional. Discord webhook URL for notifications about CAPTCHA links and download status." Type="Variable" Display="always" Required="false" Mask="true"/>
-  <Config Name="Hostnames URL" Target="HOSTNAMES" Default="" Mode="" Description="Optional. Public raw text URL containing valid hostnames (one per line as 'key = value'). Visit quasarr-hostnames.pages.dev for a guide, or search pastebin.com for 'hostnames quasarr'. Must be HTTP/HTTPS raw text, not HTML or JSON." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Hostnames URL" Target="HOSTNAMES" Default="" Mode="" Description="Optional. Public raw text URL containing valid hostnames (one per line as 'key = value'). Configure at https://quasarr-host.name or search pastebin.com for 'hostnames quasarr'. Must be HTTP/HTTPS raw text, not HTML or JSON." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Silent Mode" Target="SILENT" Default="" Mode="" Description="Optional. Set to True to silence all Discord notifications except SponsorsHelper errors." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Debug Mode" Target="DEBUG" Default="" Mode="" Description="Optional. Set to True to enable verbose debug logging for troubleshooting." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional. Your timezone (e.g., America/New_York). Incorrect timezone can cause HTTPS/SSL certificate validation issues." Type="Variable" Display="advanced" Required="false" Mask="false"/>
