@@ -16,7 +16,7 @@
 ⚡ SponsorsHelper: Active monthly GitHub sponsors get access to a companion Docker image that automatically solves CAPTCHAs and decrypts links - no manual intervention needed! Learn more: https://github.com/rix1337/Quasarr?tab=readme-ov-file#sponsorshelper&#xD;
 &#xD;
 📋 Hostnames Required: Quasarr needs at least one valid hostname to start.&#xD;
-🔗 Community ressource for hostnames: https://quasarr-host.name&#xD;
+🔗 Community resource for hostnames: https://quasarr-host.name&#xD;
 📋 Alternatively, search for community suggestions: https://pastebin.com/search?q=hostnames+quasarr (login required)&#xD;
 &#xD;
 🔧 Requirements: JDownloader 2 with My JDownloader account.</Overview>
@@ -33,11 +33,14 @@
   <ReadMe>https://github.com/rix1337/Quasarr#readme</ReadMe>
   <Config Name="Web UI for solving CAPTCHAs manually" Target="8080" Default="8080" Mode="tcp" Description="Port for web UI and API access. Use this to manually solve CAPTCHAs if not using SponsorsHelper." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Config folder" Target="/config" Default="/mnt/user/appdata/quasarr" Mode="rw" Description="Persistent configuration storage for Quasarr settings and state." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/quasarr</Config>
-  <Config Name="Internal Address" Target="INTERNAL_ADDRESS" Default="http://192.168.1.1:8080" Mode="" Description="Required! Full URL including protocol and port (e.g., http://192.168.1.1:8080). Must be reachable by Radarr/Sonarr/LazyLibrarian on your network." Type="Variable" Display="always" Required="true" Mask="false">http://192.168.1.1:8080</Config>
-  <Config Name="External Address" Target="EXTERNAL_ADDRESS" Default="" Mode="" Description="Optional. For reverse proxy setups only. Always protect external access with basic auth!" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Internal Address" Target="INTERNAL_ADDRESS" Default="http://192.168.1.1:8080" Mode="" Description="Required. Full URL including protocol and port. Must be reachable by Radarr, Sonarr, and LazyLibrarian." Type="Variable" Display="always" Required="true" Mask="false">http://192.168.1.1:8080</Config>
+  <Config Name="External Address" Target="EXTERNAL_ADDRESS" Default="" Mode="" Description="Optional. For reverse proxy setups. Always protect external access with authentication." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Discord Webhook" Target="DISCORD" Default="" Mode="" Description="Optional. Discord webhook URL for notifications about CAPTCHA links and download status." Type="Variable" Display="always" Required="false" Mask="true"/>
-  <Config Name="Hostnames URL" Target="HOSTNAMES" Default="" Mode="" Description="Optional. Public raw text URL containing valid hostnames (one per line as 'key = value'). Configure at https://quasarr-host.name or search pastebin.com for 'hostnames quasarr'. Must be HTTP/HTTPS raw text, not HTML or JSON." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Hostnames URL" Target="HOSTNAMES" Default="" Mode="" Description="Optional. Public raw text URL containing valid hostnames (one per line as 'key = value'). Must be HTTP/HTTPS raw text, not HTML or JSON." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Auth Mode" Target="AUTH" Default="form" Mode="" Description="Authentication mode. Use 'form' for session-based login or 'basic' for HTTP Basic Authentication." Type="Variable" Display="advanced" Required="false" Mask="false">form</Config>
+  <Config Name="Username" Target="USER" Default="" Mode="" Description="Username for authentication. Required when using form-based or basic authentication." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Password" Target="PASS" Default="" Mode="" Description="Password for authentication. Required when using form-based or basic authentication." Type="Variable" Display="advanced" Required="false" Mask="true"/>
   <Config Name="Silent Mode" Target="SILENT" Default="" Mode="" Description="Optional. Set to True to silence all Discord notifications except SponsorsHelper errors." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Debug Mode" Target="DEBUG" Default="" Mode="" Description="Optional. Set to True to enable verbose debug logging for troubleshooting." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional. Your timezone (e.g., America/New_York). Incorrect timezone can cause HTTPS/SSL certificate validation issues." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional. Timezone (e.g., Europe/Berlin). Incorrect values may cause HTTPS/SSL certificate validation issues." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
