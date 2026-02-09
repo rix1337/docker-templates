@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/rix1337/Quasarr/issues</Support>
   <Project>https://github.com/rix1337/Quasarr/</Project>
-  <Overview>🌟 Quasarr connects JDownloader with Radarr, Sonarr, and LazyLibrarian. It pretends to be both a Newznab Indexer and SABnzbd client - do not use it with real usenet indexers!&#xD;
+  <Overview>🌟 Quasarr connects JDownloader with Radarr, Sonarr, Lidarr, and LazyLibrarian. It pretends to be both a Newznab Indexer and SABnzbd client - do not use it with real usenet indexers!&#xD;
 &#xD;
 🔓 Includes built-in CAPTCHA decryption for protected links. Solve them manually via the Web UI, or let SponsorsHelper handle it automatically.&#xD;
 &#xD;
