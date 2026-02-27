@@ -25,10 +25,11 @@ Mount /config to persistent storage. The cached auth token is stored at /config/
   <DonateLink>https://github.com/users/rix1337/sponsorship</DonateLink>
   <Requires>Active monthly GitHub sponsorship for runtime authentication</Requires>
   <ReadMe>https://github.com/rix1337/Quasarr?tab=readme-ov-file#sponsorshelper</ReadMe>
-  <Config Name="Config folder" Target="/config" Default="/mnt/user/appdata/sponsorshelper" Mode="rw" Description="Persistent SponsorsHelper state including cached GitHub auth token." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/sponsorshelper</Config>
+  <Config Name="Config folder" Target="/config" Default="/mnt/user/appdata/sponsorshelper" Mode="rw" Description="Persistent SponsorsHelper state including cached GitHub auth token." Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/sponsorshelper</Config>
   <Config Name="Quasarr URL" Target="QUASARR_URL" Default="http://192.168.0.1:8080" Mode="" Description="Local URL of Quasarr including protocol and port (for example http://192.168.0.1:8080)." Type="Variable" Display="always" Required="true" Mask="false">http://192.168.0.1:8080</Config>
   <Config Name="Quasarr API Key" Target="QUASARR_API_KEY" Default="" Mode="" Description="Required API key from Quasarr web UI under Show API Settings." Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="2Captcha API Key" Target="APIKEY_2CAPTCHA" Default="" Mode="" Description="Optional API key for 2Captcha service." Type="Variable" Display="always" Required="false" Mask="true"/>
   <Config Name="DeathByCaptcha Token" Target="DEATHBYCAPTCHA_TOKEN" Default="" Mode="" Description="Optional token for DeathByCaptcha service." Type="Variable" Display="always" Required="false" Mask="true"/>
   <Config Name="FlareSolverr URL" Target="FLARESOLVERR_URL" Default="http://10.10.0.1:8191/v1" Mode="" Description="Local URL of FlareSolverr endpoint (for example http://10.10.0.1:8191/v1)." Type="Variable" Display="always" Required="true" Mask="false">http://10.10.0.1:8191/v1</Config>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional timezone (for example Europe/Berlin)." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>

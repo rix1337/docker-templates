@@ -32,7 +32,7 @@
   <Requires>JDownloader 2 with My JDownloader</Requires>
   <ReadMe>https://github.com/rix1337/Quasarr#readme</ReadMe>
   <Config Name="Web UI for solving CAPTCHAs manually" Target="8080" Default="8080" Mode="tcp" Description="Port for web UI and API access. Use this to manually solve CAPTCHAs if not using SponsorsHelper." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Config folder" Target="/config" Default="/mnt/user/appdata/quasarr" Mode="rw" Description="Persistent configuration storage for Quasarr settings and state." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/quasarr</Config>
+  <Config Name="Config folder" Target="/config" Default="/mnt/user/appdata/quasarr" Mode="rw" Description="Persistent configuration storage for Quasarr settings and state." Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/quasarr</Config>
   <Config Name="Internal Address" Target="INTERNAL_ADDRESS" Default="http://192.168.1.1:8080" Mode="" Description="Required. Full URL including protocol and port. Must be reachable by Radarr, Sonarr, and LazyLibrarian." Type="Variable" Display="always" Required="true" Mask="false">http://192.168.1.1:8080</Config>
   <Config Name="External Address" Target="EXTERNAL_ADDRESS" Default="" Mode="" Description="Optional. For reverse proxy setups. Always protect external access with authentication." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Discord Webhook" Target="DISCORD" Default="" Mode="" Description="Optional. Discord webhook URL for notifications about CAPTCHA links and download status." Type="Variable" Display="always" Required="false" Mask="true"/>
