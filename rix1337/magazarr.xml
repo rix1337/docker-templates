@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Magazarr</Name>
+  <Repository>ghcr.io/rix1337/magazarr:latest</Repository>
+  <Registry>https://ghcr.io/rix1337/magazarr</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/rix1337/Magazarr/issues</Support>
+  <Project>https://github.com/rix1337/Magazarr/</Project>
+  <Overview>Magazarr is a magazine-only companion for Quasarr. It keeps a free-text magazine list, periodically searches Quasarr for recent issues, sends matching releases back to Quasarr for download, imports completed PDFs, and exposes the library through OPDS.&#xD;
+&#xD;
+Configure Quasarr URL, API key, search/import intervals, import root, library path, OPDS auth, and Discord webhook from the Magazarr Web UI after first start.&#xD;
+&#xD;
+Mount the same completed-download path used by JDownloader/Quasarr to /output. If JDownloader runs in a separate container, keep the host path and container path consistent so Magazarr can safely import and clean completed package folders.</Overview>
+  <Category>Downloaders</Category>
+  <WebUI>http://[IP]:[PORT:8090]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/rix1337/Magazarr/main/assets/magazarr-icon.png</Icon>
+  <ExtraParams>--log-opt max-size=50m</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText>Sponsor me!</DonateText>
+  <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
+  <Requires>Quasarr and JDownloader 2 with a shared completed-download path.</Requires>
+  <ReadMe>https://github.com/rix1337/Magazarr#readme</ReadMe>
+  <Config Name="Web UI" Target="8090" Default="8090" Mode="tcp" Description="Port for the Magazarr Web UI and OPDS endpoint." Type="Port" Display="always" Required="true" Mask="false">8090</Config>
+  <Config Name="Config folder" Target="/config" Default="/mnt/user/appdata/magazarr" Mode="rw" Description="Persistent Magazarr settings, database, and state." Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/magazarr</Config>
+  <Config Name="Library folder" Target="/library" Default="/mnt/user/media/magazines" Mode="rw" Description="Imported magazine PDFs are stored here. Set Library Dir to /library in Magazarr settings." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/magazines</Config>
+  <Config Name="JDownloader output folder" Target="/output" Default="/mnt/user/downloads" Mode="rw" Description="Completed JDownloader/Quasarr downloads. Set Import Root to /output in Magazarr settings." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads</Config>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional timezone (for example Europe/Berlin)." Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Berlin</Config>
+  <Config Name="Log Level" Target="LOG_LEVEL" Default="INFO" Mode="" Description="Optional log level (DEBUG, INFO, WARNING, ERROR)." Type="Variable" Display="advanced" Required="false" Mask="false">INFO</Config>
+</Container>
