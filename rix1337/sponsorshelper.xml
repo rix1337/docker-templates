@@ -17,7 +17,7 @@ Sign up for https://2captcha.com/?from=27506687 and provide your API Key in the 
   <Category>Downloaders</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://i.imgur.com/iHBqLwT.png</Icon>
+  <Icon>https://raw.githubusercontent.com/rix1337/Quasarr/main/SponsorsHelper.png</Icon>
   <ExtraParams>--log-opt max-size=50m</ExtraParams>
   <PostArgs/>
   <CPUset/>

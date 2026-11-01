@@ -23,7 +23,7 @@
   <Category>Downloaders</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon>https://i.imgur.com/65nHUKs.png</Icon>
+  <Icon>https://raw.githubusercontent.com/rix1337/Quasarr/main/Quasarr.png</Icon>
   <ExtraParams>--log-opt max-size=50m</ExtraParams>
   <PostArgs/>
   <CPUset/>
