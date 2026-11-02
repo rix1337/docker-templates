@@ -22,7 +22,8 @@
 🔧 Requirements: JDownloader 2 with My JDownloader account.</Overview>
   <Category>Downloaders</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/rix1337/docker-templates/main/rix1337/quasarr.xml</TemplateURL>
+  <Date>2026-11-02</Date>
   <Icon>https://raw.githubusercontent.com/rix1337/Quasarr/main/Quasarr.png</Icon>
   <ExtraParams>--log-opt max-size=50m</ExtraParams>
   <PostArgs/>
@@ -39,4 +40,7 @@
   <Config Name="Username" Target="USER" Default="" Mode="" Description="Username for authentication. Required when using form-based or basic authentication." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Password" Target="PASS" Default="" Mode="" Description="Password for authentication. Required when using form-based or basic authentication." Type="Variable" Display="advanced" Required="false" Mask="true"/>
   <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional. Timezone (e.g., Europe/Berlin). Incorrect values may cause HTTPS/SSL certificate validation issues." Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Changes>[b]2026-11-02[/b]&#xD;
+- Major release 5: new statistics graphs in the Web UI&#xD;
+- Updated app icon</Changes>
 </Container>

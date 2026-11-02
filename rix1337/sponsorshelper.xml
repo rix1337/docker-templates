@@ -16,7 +16,8 @@ Runtime access requires an active monthly GitHub sponsorship. On first start, op
 Sign up for https://2captcha.com/?from=27506687 and provide your API Key in the APIKEY_2CAPTCHA environment variable.</Overview>
   <Category>Downloaders</Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/rix1337/docker-templates/main/rix1337/sponsorshelper.xml</TemplateURL>
+  <Date>2026-11-02</Date>
   <Icon>https://raw.githubusercontent.com/rix1337/Quasarr/main/SponsorsHelper.png</Icon>
   <ExtraParams>--log-opt max-size=50m</ExtraParams>
   <PostArgs/>
@@ -32,4 +33,7 @@ Sign up for https://2captcha.com/?from=27506687 and provide your API Key in the 
   <Config Name="DeathByCaptcha Token" Target="DEATHBYCAPTCHA_TOKEN" Default="" Mode="" Description="Optional token for DeathByCaptcha service." Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
   <Config Name="FlareSolverr URL" Target="FLARESOLVERR_URL" Default="http://10.10.0.1:8191/v1" Mode="" Description="Local URL of FlareSolverr endpoint (for example http://10.10.0.1:8191/v1)." Type="Variable" Display="always" Required="true" Mask="false">http://10.10.0.1:8191/v1</Config>
   <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional timezone (for example Europe/Berlin)." Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Changes>[b]2026-11-02[/b]&#xD;
+- Added CutCaptcha v3 support&#xD;
+- Updated app icon</Changes>
 </Container>
