@@ -16,7 +16,8 @@ Configure Quasarr URL, API key, search/import intervals, import root, library pa
 Mount the same completed-download path used by JDownloader/Quasarr to /output. If JDownloader runs in a separate container, keep the host path and container path consistent so Magazarr can safely import and clean completed package folders.</Overview>
   <Category>Downloaders</Category>
   <WebUI>http://[IP]:[PORT:8090]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/rix1337/docker-templates/main/rix1337/magazarr.xml</TemplateURL>
+  <Date>2026-11-03</Date>
   <Icon>https://raw.githubusercontent.com/rix1337/Magazarr/main/assets/magazarr-icon.png</Icon>
   <ExtraParams>--log-opt max-size=50m</ExtraParams>
   <PostArgs/>
@@ -31,4 +32,8 @@ Mount the same completed-download path used by JDownloader/Quasarr to /output. I
   <Config Name="JDownloader output folder" Target="/output" Default="/mnt/user/downloads" Mode="rw" Description="Completed JDownloader/Quasarr downloads. Set Import Root to /output in Magazarr settings." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads</Config>
   <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional timezone (for example Europe/Berlin)." Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Berlin</Config>
   <Config Name="Log Level" Target="LOG_LEVEL" Default="INFO" Mode="" Description="Optional log level (DEBUG, INFO, WARNING, ERROR)." Type="Variable" Display="advanced" Required="false" Mask="false">INFO</Config>
+  <Changes>[b]2026-11-03[/b]&#xD;
+- Version 1.0.0 with a redesigned web UI&#xD;
+- Failed downloads are removed from Quasarr and blocked from future searches&#xD;
+- Updated app icon</Changes>
 </Container>
