@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>flaresolverr-next</Name>
+  <Repository>ghcr.io/rix1337/flaresolverr-next:latest</Repository>
+  <Registry>https://ghcr.io/rix1337/flaresolverr-next</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/rix1337/flaresolverr-next/issues</Support>
+  <Project>https://github.com/rix1337/flaresolverr-next</Project>
+  <Overview>flaresolverr-next is a FlareSolverr build for Quasarr. It passes site security checks in a real browser and adds executeJs results, trusted clicks and a Google reCAPTCHA solver.&#xD;
+&#xD;
+Use it as a drop-in replacement for FlareSolverr: point Quasarr at http://[IP]:8191/v1.&#xD;
+&#xD;
+Optional: when a site shows an interactive reCAPTCHA, flaresolverr-next can hand the token solve to 2Captcha. Sign up at https://2captcha.com/?from=27506687 and enter your API key below. Without a key, it only tries the reCAPTCHA checkbox.</Overview>
+  <Category>Network:Proxy Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:8191]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/rix1337/docker-templates/main/rix1337/flaresolverr-next.xml</TemplateURL>
+  <Date>2026-11-04</Date>
+  <Icon>https://raw.githubusercontent.com/rix1337/flaresolverr-next/master/resources/flaresolverr_logo.png</Icon>
+  <ExtraParams>--log-opt max-size=50m --tmpfs /tmp:size=256M,mode=1777</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText>Sponsor me!</DonateText>
+  <DonateLink>https://github.com/sponsors/rix1337</DonateLink>
+  <Requires/>
+  <ReadMe>https://github.com/rix1337/flaresolverr-next#readme</ReadMe>
+  <Config Name="API Port" Target="8191" Default="8191" Mode="tcp" Description="FlareSolverr API port. Quasarr uses http://[IP]:8191/v1." Type="Port" Display="always" Required="true" Mask="false">8191</Config>
+  <Config Name="Config folder" Target="/config" Default="/mnt/user/appdata/flaresolverr-next" Mode="rw" Description="Persistent storage, for example for a log file set in Log File." Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/flaresolverr-next</Config>
+  <Config Name="2Captcha API Key" Target="TWOCAPTCHA_API_KEY" Default="" Mode="" Description="Optional. Lets flaresolverr-next hand interactive Google reCAPTCHA challenges to 2Captcha. https://2captcha.com/?from=27506687" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="Log Level" Target="LOG_LEVEL" Default="info" Mode="" Description="Log verbosity: info or debug." Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
+  <Config Name="Log File" Target="LOG_FILE" Default="none" Mode="" Description="Optional path for a log file, for example /config/flaresolverr.log. none logs to the console only." Type="Variable" Display="advanced-hide" Required="false" Mask="false">none</Config>
+  <Config Name="Browser Wait Timeout" Target="BROWSER_WAIT_TIMEOUT" Default="1" Mode="" Description="Seconds to wait for the browser to reach an expected page state on each attempt. Increase on slow hosts." Type="Variable" Display="advanced-hide" Required="false" Mask="false">1</Config>
+  <Config Name="Proxy URL" Target="PROXY_URL" Default="" Mode="" Description="Optional proxy for all browser traffic, for example http://192.168.1.1:8080." Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="Proxy Username" Target="PROXY_USERNAME" Default="" Mode="" Description="Optional username for the proxy." Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="Proxy Password" Target="PROXY_PASSWORD" Default="" Mode="" Description="Optional password for the proxy." Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Optional timezone (for example Europe/Berlin)." Type="Variable" Display="advanced-hide" Required="false" Mask="false">Europe/Berlin</Config>
+  <Changes>[b]2026-11-04[/b]&#xD;
+- Initial template&#xD;
+- Optional 2Captcha fallback for Google reCAPTCHA</Changes>
+</Container>
